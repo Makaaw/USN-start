@@ -1,0 +1,127 @@
+/* Bakgrunn */
+body {
+  background-color: #DFE1E3; /* Endrer bakgrunnen til hvit */
+  font-family: 'Roboto', sans-serif; /* Setter fonten til Roboto */
+}
+
+/* Logo */
+#logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 130px; /* endre bredden etter behov */
+  height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
+  /*margin-right: 10px; /* legger til en margin på høyre side for å skille logoen fra navigasjonsmenyen */
+  border-radius: 10px;
+}
+
+
+/* Slagord */
+#slagord {
+  font-size: 32px;
+  margin-left: 230px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-weight: 400; /* velger Roboto Regular */
+  font-size: 48px;
+}
+
+
+
+/* Bokser */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  gap: 1px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
+}
+
+/* Bilde */
+.box {
+  max-width: 300px;
+  margin: auto; /* endre størrelsen på margene etter behov */
+  text-align: center;
+  overflow: hidden; /* skjuler eventuell overflow */
+}
+
+
+.box img {
+  width: 100%; /* setter bredden til bildet til 100% */
+  height: auto; /* lar høyden automatisk justeres for å bevare proporsjonene */
+  object-fit: cover; /* skalering av bildet slik at det fyller hele boksen og beskjæring for å bevare proporsjonene */
+  border-radius: 10px; /* endrer hjørneradius på bildet */
+}
+
+/* Tekst */
+.box p {
+  font-size: 18px;
+  font-weight: 600; /*semibold*/
+}
+
+/* Navbar */
+.navbar {
+  background-color: #7E7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* Justerer elementene til høyre */
+}
+
+.navbar a {
+  color: #fff; /* Endrer farge på linkene til hvit */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600; /*semibold*/
+}
+
+.navbar a:hover {
+  color: #ddd;
+  color: black;
+}
+
+.navbar a.active {
+  color: #D1CCBD;
+}
+
+nav ul li a.active {
+  cursor: default;
+}
+
+/* Allerede medlem seksjon */
+.member-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+}
+
+.member-section p {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.member-button {
+  background-color: #7E7365;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600; /*semibold*/
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.member-button:hover {
+  background-color: #D1CCBD;
+  color: white;
+  transform: scale(1.05);
+}
