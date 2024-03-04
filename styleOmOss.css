@@ -1,3 +1,5 @@
+/*Farger: Hvit:#dfe1e3, Mørk: #7e7365, Lys beige: #d1ccbd */
+
 /* Bakgrunn */
 body {
   background-color: #dfe1e3; /* Endrer bakgrunnen til hvit */
@@ -183,4 +185,40 @@ nav ul li a.active {
   color: black;
   margin-top: 0;
   padding: 30px;
+}
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d1ccbd;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.contact-text {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-image {
+  flex: 0 1 30%; /* Gjør at bildecontaineren kan vokse opp til 30% av seksjonens bredde */
+  display: flex;
+  float: right;
+}
+.contact-image img {
+  max-width: 30%;
+  height: auto;
+  float: right;
+  border-radius: 10px; /* Tilføyer avrundede hjørner for konsistens */
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+
+  .contact-image {
+    margin-top: 50px;
+  }
 }
