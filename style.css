@@ -43,10 +43,12 @@ body {
 
 /* Bilde */
 .box {
-  max-width: 300px;
   margin: auto; /* endre størrelsen på margene etter behov */
   text-align: center;
   overflow: hidden; /* skjuler eventuell overflow */
+  flex: 1;
+  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
+  max-width: calc(33% - 30px); /* Juster maks bredde basert på containerens padding */
 }
 
 
