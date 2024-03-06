@@ -186,30 +186,47 @@ nav ul li a.active {
   margin-top: 0;
   padding: 30px;
 }
-.contact-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.section-divider {
+  margin: 0;
+  height: 50px;
   background-color: #d1ccbd;
-  padding-top: 30px;
-  gap: 20px;
 }
-
-.contact-text {
+.header-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; */
   background-color: white;
-  flex: 1;
-  padding: 20px;
+  padding-top: 30px;
+  /* gap: 20px; */
 }
 
-.contact-image {
-  flex: 0 1 30%; /* Gjør at bildecontaineren kan vokse opp til 30% av seksjonens bredde */
-  display: flex;
-  float: right;
+.header-text {
+  /* flex-grow: 1;
+  display: flex; */
+  background-color: white;
+  /* flex: 1; */
+  /* flex-basis: 100%; */
+  padding: 20px;
+  /* flex-direction: column; */
 }
-.contact-image img {
-  max-width: 30%;
+
+.header-image {
+  padding: 20px;
+  /* flex: 0 1 30%; Gjør at bildecontaineren kan vokse opp til 30% av seksjonens bredde */
+  /* flex-grow: 1; */
+  /* display: flex; */
+  /* flex: 1; */
+  /* flex-basis: 100%; */
+  /* flex-direction: column; */
+}
+.header-image img {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
   height: auto;
-  float: right;
   border-radius: 10px; /* Tilføyer avrundede hjørner for konsistens */
 }
 
@@ -217,8 +234,34 @@ nav ul li a.active {
   .contact-section {
     flex-direction: column;
   }
-
-  .contact-image {
-    margin-top: 50px;
-  }
+}
+.contact-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; */
+  background-color: #d1ccbd;
+  padding-top: 30px;
+  /* gap: 20px; */
+}
+.adress-section {
+  padding: 20px;
+  margin: 20px;
+}
+.info-section {
+  padding-top: 200px;
+  text-align: center;
+}
+.container {
+  background: white;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10%;
+}
+.socialmedia {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #d1ccbd;
 }
