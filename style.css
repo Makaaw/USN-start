@@ -1,6 +1,6 @@
 /* Bakgrunn */
 body {
-  background-color: #DFE1E3; /* Endrer bakgrunnen til hvit */
+  background-color: white; /*  #DFE1E3; /* Endrer bakgrunnen til hvit */
   font-family: 'Roboto', sans-serif; /* Setter fonten til Roboto */
 }
 
@@ -38,6 +38,7 @@ body {
   margin: 0 auto;
   margin-bottom: 20px;
   gap: 1px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
+  position: relative; 
 }
 
 /* Bilde */
@@ -62,6 +63,31 @@ body {
   font-weight: 600; /*semibold*/
 }
 
+/* CTA-knapp */
+.cta-button {
+  position: absolute;
+  bottom: 80px;
+  right: 2px;
+  background-color: #16668b;;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center; /* Sentrer teksten */
+  line-height: 1.2; /* Juster linjehøyde for å bryte teksten på to linjer */
+  width: 160px; /* Endre bredden til passende størrelse */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
+}
+
+.cta-button:hover {
+  background-color: #4a8be0;
+  color: black;
+  transform: scale(1.05);
+}
+
+
 /* Navbar */
 .navbar {
   background-color: #7E7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
@@ -81,7 +107,7 @@ body {
 
 .navbar a:hover {
   color: #ddd;
-  color: black;
+  color: #D1CCBD;
 }
 
 .navbar a.active {
@@ -112,16 +138,144 @@ nav ul li a.active {
   padding: 6px 12px;
   border-radius: 30px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 14px;
   font-weight: 600; /*semibold*/
   cursor: pointer;
   transition-duration: 0.4s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
 
 .member-button:hover {
   background-color: #D1CCBD;
   color: white;
   transform: scale(1.05);
+}
+
+/* Main section */
+/* Hovedseksjonen med lysere bakgrunnsfarge */
+.main-section {
+  background-color: #D1CCBD;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Boksene */
+.box-main {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
+  max-width: calc(25% - 30px); /* Juster maks bredde basert på containerens padding */
+}
+
+/* Avstanden mellom boksene */
+.box-main:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* Overskriftene */
+.box-main h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Ikoner og tekst for verdiboksene */
+.value {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.value i {
+  font-size: 22px;
+  margin-right: 5px;
+  color: black;
+  align-self: flex-start;
+}
+
+.value p{
+  margin: 0;
+  margin-left: 20px;
+ }                      
+ 
+ #innovasjon{
+  margin-left: 26px;  /*Ulike størrelse for å få teksten likt plassert*/
+ }
+
+/* Bildet i tilbyr-boksen */
+.box-main img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 36px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Sitatelementene */
+blockquote {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Lenken til sitater */
+#bqlink {
+  font-size: 14px;
+  color: black;
+  text-decoration: underline;
+}
+
+/* Kartutsnitt og adresse */
+.map {
+  display: flex;
+  flex-direction: column;
+}
+
+.map img {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+address {
+  font-size: 14px;
+  font-style: normal;
+  margin: 18px 0;
+  text-align: right;
+}
+
+/* Ikoner for sosiale medier */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #111111;
+}
+
+/* Responsiv tilpasning */
+@media screen and (max-width: 768px) {
+  .box-main {
+    max-width: calc(50% - 20px); /* To bokser per rad på mindre skjermer */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-main {
+    max-width: calc(100% - 20px); /* Én boks per rad på veldig små skjermer */
+  }
 }
