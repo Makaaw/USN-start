@@ -2,6 +2,8 @@
 body {
   background-color: white; /*  #DFE1E3; /* Endrer bakgrunnen til hvit */
   font-family: 'Roboto', sans-serif; /* Setter fonten til Roboto */
+  font-size: 16px;
+  font-weight: normal; /* velger Roboto Regular */
 }
 
 /* Logo */
@@ -11,19 +13,18 @@ body {
   left: 20px;
   width: 130px; /* endre bredden etter behov */
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
-  /*margin-right: 10px; /* legger til en margin på høyre side for å skille logoen fra navigasjonsmenyen */
   border-radius: 10px;
 }
 
 
 /* Slagord */
 #slagord {
-  font-size: 32px;
-  margin-left: 230px;
-  margin-top: 80px;
-  margin-bottom: 80px;
-  font-weight: 400; /* velger Roboto Regular */
-  font-size: 48px;
+  font-size: 3rem;
+  margin-left: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-weight: lighter;
 }
 
 
@@ -34,10 +35,9 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 1200px;
   margin: 0 auto;
   margin-bottom: 20px;
-  gap: 1px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
+  gap: 10px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
   position: relative; 
 }
 
@@ -61,7 +61,7 @@ body {
 
 /* Tekst */
 .box p {
-  font-size: 18px;
+  font-size: 1.2rem;
   font-weight: 600; /*semibold*/
 }
 
@@ -75,11 +75,11 @@ body {
   padding: 6px 12px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 600;
   text-align: center; /* Sentrer teksten */
-  line-height: 1.2; /* Juster linjehøyde for å bryte teksten på to linjer */
-  width: 160px; /* Endre bredden til passende størrelse */
+  line-height: 1.4; /* Juster linjehøyde for å bryte teksten på to linjer */
+  width: 190px; /* Endre bredden til passende størrelse */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
 
@@ -103,7 +103,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600; /*semibold*/
 }
 
@@ -129,7 +129,7 @@ nav ul li a.active {
 }
 
 .member-section p {
-  font-size: 14px;
+  font-size: 0.8rem;
   margin-right: 10px;
 }
 
@@ -141,7 +141,7 @@ nav ul li a.active {
   border-radius: 30px;
   text-align: center;
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600; /*semibold*/
   cursor: pointer;
   transition-duration: 0.4s;
@@ -182,7 +182,7 @@ nav ul li a.active {
 
 /* Overskriftene */
 .box-main h2 {
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -221,14 +221,14 @@ nav ul li a.active {
 
 /* Sitatelementene */
 blockquote {
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
   margin-bottom: 20px;
 }
 
 /* Lenken til sitater */
 #bqlink {
-  font-size: 14px;
+  font-size: 0.9rem;
   color: black;
   text-decoration: underline;
 }
@@ -247,7 +247,7 @@ blockquote {
 }
 
 address {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-style: normal;
   margin: 18px 0;
   text-align: right;
@@ -274,10 +274,18 @@ address {
   .box-main {
     max-width: calc(50% - 20px); /* To bokser per rad på mindre skjermer */
   }
-}
+  body {
+    font-size: 0.8rem;
+  }
+
+  .navbar a { font-size: 0.8rem; /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ } }
+
 
 @media screen and (max-width: 480px) {
   .box-main {
     max-width: calc(100% - 20px); /* Én boks per rad på veldig små skjermer */
   }
-}
+  body {
+    font-size: 0.8rem;
+  }
+  .navbar a { font-size: 0.8rem; /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ } }
