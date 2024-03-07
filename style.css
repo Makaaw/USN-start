@@ -20,104 +20,11 @@ body {
 /* Slagord */
 #slagord {
   font-size: 3rem;
-  margin-left: 4rem;
+  margin-left: 10rem;
   margin-top: 6rem;
   margin-bottom: 2rem;
   text-align: left;
   font-weight: lighter;
-}
-
-
-
-/* Bokser */
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  gap: 10px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
-  position: relative; 
-}
-
-/* Bilde */
-.box {
-  margin: auto; /* endre størrelsen på margene etter behov */
-  text-align: center;
-  overflow: hidden; /* skjuler eventuell overflow */
-  flex: 1;
-  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
-  max-width: calc(33% - 30px); /* Juster maks bredde basert på containerens padding */
-}
-
-
-.box img {
-  width: 100%; /* setter bredden til bildet til 100% */
-  height: auto; /* lar høyden automatisk justeres for å bevare proporsjonene */
-  object-fit: cover; /* skalering av bildet slik at det fyller hele boksen og beskjæring for å bevare proporsjonene */
-  border-radius: 10px; /* endrer hjørneradius på bildet */
-}
-
-/* Tekst */
-.box p {
-  font-size: 1.2rem;
-  font-weight: 600; /*semibold*/
-}
-
-/* CTA-knapp */
-.cta-button {
-  position: absolute;
-  bottom: 80px;
-  right: 2px;
-  background-color: #16668b;;
-  color: black;
-  padding: 6px 12px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  text-align: center; /* Sentrer teksten */
-  line-height: 1.4; /* Juster linjehøyde for å bryte teksten på to linjer */
-  width: 190px; /* Endre bredden til passende størrelse */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
-}
-
-.cta-button:hover {
-  background-color: #4a8be0;
-  color: black;
-  transform: scale(1.05);
-}
-
-
-/* Navbar */
-.navbar {
-  background-color: #7E7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
-  overflow: hidden;
-  display: flex;
-  justify-content: flex-end; /* Justerer elementene til høyre */
-}
-
-.navbar a {
-  color: #fff; /* Endrer farge på linkene til hvit */
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 600; /*semibold*/
-}
-
-.navbar a:hover {
-  color: #ddd;
-  color: #D1CCBD;
-}
-
-.navbar a.active {
-  color: #D1CCBD;
-}
-
-nav ul li a.active {
-  cursor: default;
 }
 
 /* Allerede medlem seksjon */
@@ -153,6 +60,98 @@ nav ul li a.active {
   color: white;
   transform: scale(1.05);
 }
+
+/* Bokser */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  gap: 10px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
+  position: relative; 
+}
+
+/* Bilde */
+.box {
+  margin: auto; /* endre størrelsen på margene etter behov */
+  text-align: center;
+  overflow: hidden; /* skjuler eventuell overflow */
+  flex: 1;
+  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
+  max-width: calc(33% - 30px); /* Juster maks bredde basert på containerens padding */
+}
+
+.box img {
+  width: 100%; /* setter bredden til bildet til 100% */
+  height: auto; /* lar høyden automatisk justeres for å bevare proporsjonene */
+  object-fit: cover; /* skalering av bildet slik at det fyller hele boksen og beskjæring for å bevare proporsjonene */
+  border-radius: 10px; /* endrer hjørneradius på bildet */
+}
+
+/* Tekst */
+.box p {
+  font-size: 1.2rem;
+  font-weight: 600; /*semibold*/
+}
+
+/* CTA-knapp */
+.cta-button {
+  position: absolute;
+  bottom: 80px;
+  right: 2px;
+  background-color: #16668b;;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center; /* Sentrer teksten */
+  line-height: 1.4; /* Juster linjehøyde for å bryte teksten på to linjer */
+  width: 190px; /* Endre bredden til passende størrelse */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
+}
+
+.cta-button:hover {
+  background-color: #0d3263;
+  color: black;
+  transform: scale(1.05);
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #7E7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end; /* Justerer elementene til høyre */
+}
+
+.navbar a {
+  color: #fff; /* Endrer farge på linkene til hvit */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600; /*semibold*/
+}
+
+.navbar a:hover {
+  color: #ddd;
+  color: #D1CCBD;
+}
+
+.navbar a.active {
+  color: #D1CCBD;
+}
+
+nav ul li a.active {
+  cursor: default;
+}
+
+
 
 /* Main section */
 /* Hovedseksjonen med lysere bakgrunnsfarge */
@@ -279,8 +278,8 @@ address {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
-  max-width: calc(100% - 40px); /* Juster maks bredde basert på containerens padding */
+  /*min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
+  /*max-width: calc(100% - 40px); /* Juster maks bredde basert på containerens padding */
 }
 
 .row2 {
@@ -294,7 +293,7 @@ address {
   
 }
 
-h2 {
+.main-section2 h2 {
   font-size: 5rem;
   margin: 0;
   padding-left: 100px;
@@ -330,37 +329,27 @@ h2 {
   line-height: 1.5rem;
 }
 
+
 .column-half3 {
   flex-basis: 33.3%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.box-container {
-  position: relative;
-}
-
-.box-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  padding: 5px;
-  height: auto;
-  display: inline-block;
+  justify-content: center;
 }
 
 .box2 {
   background-color:hsl(29, 92%, 50%);
   padding: 20px;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60px;
-  width: 200px;
+  justify-content: space-between;
+  text-align: center;
   margin-bottom: 20px;
+  margin-left: -10px;
 }
 
 .box-text {
@@ -369,36 +358,64 @@ h2 {
 
 .bookingbutton {
   display: block;
-  margin-top: 10px;
+  margin: 10px 0;
+  padding: 10px 20px;
   border-radius: 20px;
   align-items: center;
   font-weight: bold;
 }
 
-.cta-button2 {
+.main-section2 .cta-button {
   display: block;
   margin-top: 20px;
   position: relative;
-  z-index: 1;
-  background-color: #16668b;;
-  color: black;
-  padding: 2px 20px;
-  border-radius: 10px;
-  text-decoration: none;
+  /*padding: 2px 20px;*/
+  bottom: -30px;
+  margin-left: 20px;
+}
+
+.tenants{
+  margin: 20px 100px;
+  padding-bottom: 80px;
+}
+
+.names {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 celler med lik bredde */
+  grid-gap: 20px; /* 20px avstand mellom cellene */
+  justify-content: center; /* sentrerer rutenettet horisontalt */
+  align-items: center; /*  sentrerer rutenettet vertikalt */
+}
+.name {
+  text-align: center; /* sentrerer tekst i cellene */
+}
+
+
+.footer {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /*flex-start*/
+  align-items: center; /*flex-start*/
   font-size: 1rem;
+  line-height: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.footer__text {
+  margin-right: 20px;
+  font-size: 0.9rem;
   font-weight: 600;
-  text-align: center; /* Sentrer teksten */
-  line-height: 1.4; /* Juster linjehøyde for å bryte teksten på to linjer */
-  width: 240px; /* Endre bredden til passende størrelse */
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
 
-.cta-button2:hover {
-  background-color: #4a8be0;
-  color: black;
-  transform: scale(1.05);
+.footer .social-icons{
+  padding-right: 40px;
 }
-
 
 
 
@@ -419,7 +436,7 @@ h2 {
     flex-direction: column; 
    }
  
-   .column-half2, .column-half3 {
+   .column-half .column-half2, .column-half3 {
      flex-basis: 100%;
      max-width: 100%;
    }}
@@ -439,7 +456,7 @@ h2 {
     flex-direction: column; 
    }
  
-   .column-half2, .column-half3 {
+   .column-half .column-half2, .column-half3 {
      flex-basis: 100%;
      max-width: 100%;
    } }
