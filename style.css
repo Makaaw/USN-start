@@ -394,7 +394,6 @@ address {
 .footer {
   position: relative;
   background-color: #ffffff;
-  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /*flex-start*/
@@ -408,9 +407,10 @@ address {
 
 
 .footer__text {
-  margin-right: 20px;
+  margin-left: 20px;
   font-size: 0.9rem;
   font-weight: 600;
+  padding-bottom: 20px;
 }
 
 .footer .social-icons{
