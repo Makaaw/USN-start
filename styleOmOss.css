@@ -2,7 +2,7 @@
 
 /* Bakgrunn */
 body {
-  background-color: #dfe1e3; /* Endrer bakgrunnen til hvit */
+  background-color: white; /* Endrer bakgrunnen til hvit */
   font-family: "Roboto", sans-serif; /* Setter fonten til Roboto */
 }
 
@@ -27,9 +27,9 @@ p {
 /* Logo */
 #logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 130px; /* endre bredden etter behov */
+  top: 0rem;
+  left: 5rem;
+  width: 15rem; /* endre bredden etter behov */
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
   /*margin-right: 10px; /* legger til en margin på høyre side for å skille logoen fra navigasjonsmenyen */
   border-radius: 10px;
@@ -39,7 +39,7 @@ p {
 #tittel {
   font-size: 32px;
   margin-left: 230px;
-  margin-top: 80px;
+  margin-top: 12rem;
   margin-bottom: 80px;
   font-weight: 400; /* velger Roboto Regular */
   font-size: 48px;
@@ -50,14 +50,9 @@ p {
   font-size: 18px;
   font-weight: 600; /*semibold*/
 }
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 25px;
-}
+
 .responsive-image {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 10px;
   text-align: center;
@@ -65,6 +60,7 @@ p {
 
 /* Navbar */
 .navbar {
+  margin-top: 5rem;
   background-color: #7e7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
   overflow: hidden;
   display: flex;
@@ -82,7 +78,7 @@ p {
 
 .navbar a:hover {
   color: #ddd;
-  color: #D1CCBD;
+  color: #d1ccbd;
 }
 
 .navbar a.active {
@@ -194,33 +190,19 @@ nav ul li a.active {
 .header-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between; */
   background-color: white;
   padding-top: 30px;
+  height: auto;
   /* gap: 20px; */
 }
 
 .header-text {
-  /* flex-grow: 1;
-  display: flex; */
   background-color: white;
-  /* flex: 1; */
-  /* flex-basis: 100%; */
   padding: 20px;
-  /* flex-direction: column; */
 }
 
 .header-image {
   padding: 20px;
-  /* flex: 0 1 30%; Gjør at bildecontaineren kan vokse opp til 30% av seksjonens bredde */
-  /* flex-grow: 1; */
-  /* display: flex; */
-  /* flex: 1; */
-  /* flex-basis: 100%; */
-  /* flex-direction: column; */
 }
 .header-image img {
   width: 100%;
@@ -238,13 +220,8 @@ nav ul li a.active {
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between; */
   background-color: #d1ccbd;
   padding-top: 30px;
-  /* gap: 20px; */
 }
 .adress-section {
   padding: 20px;
@@ -254,14 +231,70 @@ nav ul li a.active {
   padding-top: 200px;
   text-align: center;
 }
-.container {
+.åpningstider-section {
   background: white;
   width: fit-content;
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 15px;
+  align-items: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  background: white;
+  width: fit-content;
+  height: 100 px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
 }
 .socialmedia {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #d1ccbd;
+}
+.socialmedia-img {
+  height: 40px;
+  padding: 15px;
+}
+.tilbakemelding-container {
+  display: flex;
+  justify-content: center; /* Midtstiller boksene horisontalt */
+  gap: 20px; /* Avstand mellom hver boks */
+  height: auto;
+  background-color: #d1ccbd;
+}
+
+.tilbakemelding-box {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 200px; /* Bredde på boksen */
+  background-color: white;
+  text-align: center; /* Sentrerer teksten */
+  position: relative; /* For posisjonering av bildet */
+  padding-top: 50px; /* Gjør plass for bildet som stikker ut */
+  padding: 50px 8px 8px 8px;
+  border-radius: 15px; /* Avrundede hjørner på boksen */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Liten skyggeeffekt for dybde */
+}
+
+.tilbakemelding-box img {
+  width: 50%; /* Bildet er halvparten så bredt som boksen */
+  border-radius: 50%; /* Gjør bildet rundt */
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Sentrerer bildet og flytter det opp */
+  border: 3px solid white; /* Legger til en kant rundt bildet */
+}
+.tilbakemelding-footer {
+  background-color: #d1ccbd;
+  text-align: center;
+  margin: 0;
+  padding: 5rem;
+}
+
+.footer.img {
+  height: 10rem;
 }
