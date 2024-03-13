@@ -4,6 +4,7 @@ body {
   font-family: 'Roboto', sans-serif; /* Setter fonten til Roboto */
   font-size: 16px;
   font-weight: normal; /* velger Roboto Regular */
+  position: relative;
 }
 
 /* Logo */
@@ -417,6 +418,63 @@ address {
   padding-right: 40px;
 }
 
+/*Fasiliteter - underside */
+/* Bilde */
+.box_fas {
+  margin: auto; /* endre størrelsen på margene etter behov */
+  text-align: center;
+  overflow: hidden; /* skjuler eventuell overflow */
+  flex: 1;
+  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
+  max-width: calc(25% - 30px); /* Juster maks bredde basert på containerens padding */
+}
+
+.box_fas img {
+  width: 100%; /* setter bredden til bildet til 100% */
+  height: auto; /* lar høyden automatisk justeres for å bevare proporsjonene */
+  object-fit: cover; /* skalering av bildet slik at det fyller hele boksen og beskjæring for å bevare proporsjonene */
+  border-radius: 10px; /* endrer hjørneradius på bildet */
+}
+
+/* Tittel */
+#tittel {
+  font-size: 32px;
+  margin-left: 230px;
+  margin-top: 12rem;
+  margin-bottom: 80px;
+  font-weight: 400; /* velger Roboto Regular */
+  font-size: 48px;
+}
+
+/* Boksene */
+.box-main_fas {
+  padding: 15px;
+  margin: 15px;
+  flex: 1;
+  min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
+  max-width: calc(25% - 30px); /* Juster maks bredde basert på containerens padding */
+  padding-bottom: 40px;
+}
+
+/*Floorplan*/
+.floorplan{
+  position: relative;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /*height: 300px; /* settes til høyden på div-en */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.floorplan h2, img {
+  margin: 0 auto;
+  width: 80%;
+}
 
 
 /* Responsiv tilpasning */
