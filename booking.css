@@ -1,0 +1,46 @@
+.upper-section {
+  width: 100%;
+  background-color: #d1ccbd;
+  height: 8rem;
+}
+.container {
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: #7e7365;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.circle img {
+  width: 100px; /* Størrelsen på logoen din kan justeres her */
+  height: auto;
+}
+.text-and-buttons {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 0 0 20px 0;
+  font-family: "Roboto", sans-serif;
+}
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+button {
+  font-family: "Roboto", sans-serif;
+  background-color: #7e7365;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
