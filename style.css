@@ -21,20 +21,19 @@ body {
 /* Logo */
 #logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 130px; /* endre bredden etter behov */
+  top: 0rem;
+  left: 5rem;
+  width: 10rem; /* endre bredden etter behov 130 px */
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
-  border-radius: 10px;
+  border-radius: 10px; 
 }
-
 
 /* Slagord */
 #slagord {
-  font-size: 3rem;
-  margin-left: 10rem;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  margin-left: 12rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
   text-align: left;
   font-weight: lighter;
 }
@@ -225,9 +224,12 @@ nav ul li a.active {
 /* Bildet i tilbyr-boksen */
 .box-main img {
   max-width: 100%;
-  margin-top: 20px;
+  margin: 10px auto;
+  /*margin-top: 20px;*/
+  display: block;
   border-radius: 36px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 /* Sitatelementene */
@@ -253,8 +255,7 @@ blockquote {
 .map img {
   max-width: 100%;
   margin-top: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
 }
 
 address {
@@ -451,10 +452,10 @@ address {
 #tittel {
   font-size: 32px;
   margin-left: 230px;
-  margin-top: 12rem;
+  margin-top: 10rem;
   margin-bottom: 80px;
   font-weight: 400; /* velger Roboto Regular */
-  font-size: 48px;
+  font-size: 64px;
 }
 
 /* Boksene */
