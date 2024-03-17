@@ -1,7 +1,49 @@
+#backButton {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #7e7365; /* Samme farge som kalenderikonknappen */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Gjør knappen rund */
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#homeButton {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+  width: 50px;
+  height: 50px;
+  background-color: #7e7365; /* Samme farge som kalenderikonknappen */
+  color: white;
+  border: none;
+  border-radius: 50%; /* Gjør knappen rund */
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.hjemikon {
+  width: 2rem;
+}
+.tilbakepil {
+  width: 2rem;
+}
+
 .upper-section {
   width: 100%;
   background-color: #d1ccbd;
   height: 8rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
 }
 .container {
   margin-top: 8rem;
@@ -26,12 +68,16 @@
 .text-and-buttons {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 h1 {
   margin: 0 0 20px 0;
   font-family: "Roboto", sans-serif;
 }
 h2 {
+  font-family: "Roboto", sans-serif;
+}
+h3 {
   font-family: "Roboto", sans-serif;
 }
 button {
@@ -42,5 +88,82 @@ button {
   margin: 10px 0;
   padding: 10px;
   border-radius: 10px;
+  cursor: pointer;
+}
+.button {
+  font-family: "Roboto", sans-serif;
+  background-color: #7e7365;
+  color: white;
+  border: none;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+.centered {
+  text-align: center;
+}
+
+.seats {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Legger til litt avstand mellom de to seat-containerne */
+}
+
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.seat-container img {
+  width: 7rem;
+}
+
+img {
+  margin-bottom: 10px; /* Gir litt avstand mellom bildet og teksten under */
+}
+#actionButton {
+  background-color: #7e7365; /* Samme brunfarge */
+  border: none;
+  border-radius: 50%; /* Gjør knappen rund */
+  cursor: pointer;
+  width: 50px; /* Eller annen ønsket størrelse */
+  height: 50px; /* Eller annen ønsket størrelse */
+  margin-top: 300px; /* Avstand fra bildene over */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#actionButton img {
+  width: 30px; /* Tilpass basert på ikonets størrelse */
+  height: auto;
+}
+.floorplan {
+  display: flex;
+  justify-content: center;
+}
+.floorplan svg {
+  max-width: 100vw;
+}
+.free {
+  fill: lawngreen;
+  fill-opacity: 1;
+  cursor: pointer;
+}
+.taken {
+  fill: #686868;
+  fill-opacity: 1;
   cursor: pointer;
 }

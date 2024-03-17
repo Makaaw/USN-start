@@ -11,6 +11,14 @@
     />
   </head>
   <body>
+    <!-- Tilbake-knappen -->
+    <a href="booking.html" id="backButton">
+      <img src="TilbakePil.png" alt="Tilbake" class="tilbakepil">
+    </a>
+    <!-- Hjem-knappen -->
+<a href="index.html" id="homeButton" class="navigationButton">
+  <img src="ikon-hus.png" alt="Hjem" class="hjemikon">
+</a>
     <div class="upper-section"></div>
     <div class="container">
       <div class="circle">
@@ -18,9 +26,65 @@
       </div>
       <div class="text-and-buttons">
         <h1>Velg dato:</h1>
-        <button>Velg måned</button>
-        <button>Velg år</button>
+        <button onclick="toggleDropdown('dayDropdown')" class="button" aria-controls="dayDropdown" aria-expanded="false">Velg dag</button>
+        <div id="dayDropdown" class="dropdown">
+          <!-- Fyll inn dager -->
+          <p>Mandag</p><p>Tirsdag</p><p>Onsdag</p><p>Torsdag</p><p>Fredag</p><p>Lørdag</p>
+        </div>
+      <div class="text-and-buttons">
+        <button onclick="toggleDropdown('dateDropdown')" class="button">
+          Velg måned
+        </button>
+        <div id="dateDropdown" class="dropdown">
+          <p>Januar</p>
+          <p>Februar</p>
+          <p>Mars</p>
+          <p>April</p>
+          <p>Mai</p>
+          <p>Juni</p>
+          <p>Juli</p>
+          <p>August</p>
+          <p>September</p>
+          <p>Oktober</p>
+          <p>November</p>
+          <p>Desember</p>
+        </div>
+        <button onclick="toggleDropdown('yearDropdown')" class="button">
+          Velg år
+        </button>
+        <div id="yearDropdown" class="dropdown">
+          <p>2024</p>
+          <p>2025</p>
+        </div>
       </div>
     </div>
+    <a href="velgKontorplass.html" id="actionButton"> 
+      <img src="ViderePil.png" alt="Handling" class="buttonIcon">
+    </a>
+    <script>
+      function toggleDropdown(dropdownId) {
+        var dropdown = document.getElementById(dropdownId);
+        var isExpanded = dropdown.style.display === "block";
+        dropdown.style.display = isExpanded ? "none" : "block";
+  
+        var button = document.querySelector(`button[aria-controls="${dropdownId}"]`);
+        if (button) button.setAttribute('aria-expanded', !isExpanded);
+      }
+  
+      window.onclick = function(event) {
+        if (!event.target.matches(".button")) {
+          var dropdowns = document.getElementsByClassName("dropdown");
+          var buttons = document.querySelectorAll('.button');
+  
+          for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.style.display === "block") {
+              openDropdown.style.display = "none";
+              buttons[i].setAttribute('aria-expanded', 'false');
+            }
+          }
+        }
+      };
+    </script>
   </body>
 </html>
