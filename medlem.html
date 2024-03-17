@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medlemskap</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiv.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
+    />
+    <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
+  </head>
+  <body>
+
+    <!-- Header -->
+    <div class="header-section">
+        <img src="Logo.png" alt="Logo" id="logo" />
+        <h1 id="tittel">Medlemskap og priser</h1>
+        <img
+          src="Bilder/members.jpg"
+          class="responsive-image"
+          alt="Bilde av to personer som jobber i Workspace"
+        />
+      </div>
+  
+      <!-- Navbar -->
+      <div class="navbar">
+        <a href="index.html">Hjem</a>
+        <a href="fasiliteter.html">Fasiliteter</a>
+        <a class="active" href="medlem.html">Bli medlem</a>
+        <a href="OmOss.html">Om oss</a>
+      </div>
+
+    <!--Main section-->
+    <div class="main-section_medlem">
+      <p>Velkommen til USNStart Coworking Space! <br> Vi tilbyr fleksible medlemskap og moderne fasiliteter for din arbeidsdag.</p>
+      <div class="container-medlem">
+      <div class="column">
+        <div class="medlemskap">
+        <div class="plan">
+            <ul>
+                <li>Dag</li>
+                <li>Måned</li>
+                <li>År</li>
+                <li>Privat kontor per mnd</li>
+            </ul>
+        </div>
+        <div class="pris">
+            <ul>
+                <li>699,-</li>
+                <li><span lang="no">6&nbsp;000,-</span></li>
+                <li><span lang="no">50&nbsp;000,-</span></li>
+                <li><span lang="no">20&nbsp;000,-</span></li>
+            </ul>
+        </div>
+    </div>
+        <div class="mer-info">
+            <p>Prisene inkluderer fri bruk av kontorlandskap med alle fasiliteter.</p>
+        </div>
+    </div>   
+    <div class="box-wrapper">
+         <div class="box2">
+           <p class="box-text" id="rabatt">STUDENTRABATT<br><br></p>
+           <p class="box-text">9000,-/semester</p>
+           <a href="#" class="bookingbutton">BOOK HER</a>
+         </div>
+         
+     </div>
+   </div>
+   </div>
+
+    <!--registreringsskjema-->
+    <div class="innmelding">
+    <h1>Innmelding</h1>
+    <form>
+        <label for="mobiltelefon">Mobiltelefon</label>
+        <input type="tel" id="mobiltelefon" name="mobiltelefon" required>
+        <br>
+        <label for="epost">E-post</label>
+        <input type="email" id="epost" name="epost" required>
+        <br>
+        <label for="fornavn">Fornavn</label>
+        <input type="text" id="fornavn" name="fornavn" required>
+        <br>
+        <label for="etternavn">Etternavn</label>
+        <input type="text" id="etternavn" name="etternavn" required>
+        <br>
+        <label for="fodselsdato">Fødselsdato</label>
+        <input type="date" id="fodselsdato" name="fodselsdato" required>
+        <br>
+        <label for="adresse">Adresse</label>
+        <input type="text" id="adresse" name="adresse" required>
+        <br>
+        <label for="postnr">Postnr/sted</label>
+        <input type="text" id="postnr" name="postnr" required>
+      
+        <div class="checkbox-label">
+            <input type="checkbox" id="samtykke" name="samtykke" required>
+            <label for="samtykke">Samtykke til lagring av persondata</label>
+            <button type="submit">Bli medlem</button>  
+        </div>
+      
+        
+      </form>
+      
+
+    </div>
+      
+
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer__text">
+      USNStart Coworking Space | Gullbringvegen 36, 3800 Bø<br>
+      Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
+    </div>
+   <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+   </div>
+  </footer> 
+  
+    
+  </body>
+</html>

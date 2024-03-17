@@ -9,8 +9,13 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* velger Roboto Regular */
-  font-size: 48px;
+  font-size: 40px;
 }
+
+.header-text h1 {
+  font-size: 64px;
+}
+
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* velger Roboto Regular */
@@ -28,10 +33,9 @@ p {
 #logo {
   position: absolute;
   top: 0rem;
-  left: 5rem;
-  width: 15rem; /* endre bredden etter behov */
+  left: 3rem;
+  width: 10rem; /* endre bredden etter behov */
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
-  /*margin-right: 10px; /* legger til en margin på høyre side for å skille logoen fra navigasjonsmenyen */
   border-radius: 10px;
 }
 
@@ -39,17 +43,12 @@ p {
 #tittel {
   font-size: 32px;
   margin-left: 230px;
-  margin-top: 12rem;
+  margin-top: 8rem;
   margin-bottom: 80px;
   font-weight: 400; /* velger Roboto Regular */
-  font-size: 48px;
+  font-size: 64px;
 }
 
-/* Tekst */
-.box p {
-  font-size: 18px;
-  font-weight: 600; /*semibold*/
-}
 
 .responsive-image {
   max-width: 70%;
@@ -89,6 +88,7 @@ nav ul li a.active {
   cursor: default;
 }
 
+
 /* Allerede medlem seksjon */
 .member-section {
   display: flex;
@@ -98,27 +98,27 @@ nav ul li a.active {
 }
 
 .member-section p {
-  font-size: 14px;
+  font-size: 0.8rem;
   margin-right: 10px;
 }
 
 .member-button {
-  background-color: #7e7365;
+  background-color: #7E7365;
   border: none;
   color: white;
   padding: 6px 12px;
   border-radius: 30px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
-  font-size: 14px;
+  font-size: 0.8rem;
   font-weight: 600; /*semibold*/
   cursor: pointer;
   transition-duration: 0.4s;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
 
 .member-button:hover {
-  background-color: #d1ccbd;
+  background-color: #7E7365;
   color: white;
   transform: scale(1.05);
 }
@@ -137,26 +137,34 @@ nav ul li a.active {
 .values-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around;  
+  align-items: center;   /*lagt til*/
   margin-top: 20px;
 }
 
 .value-box {
   background-color: white;
   border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
+  padding: 15px;
+  margin: 15px;
   flex: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
   max-width: calc(
     25% - 20px
   ); /* Juster maks bredde basert på containerens padding */
 }
 
-.value-box img {
-  width: 50px;
-  height: 50px;
+/* Avstanden mellom boksene */
+.value-box:not(:last-child) {
+  margin-right: 10px;
 }
+
+.value-box img {
+  width: 40px;
+  height: 40px;
+}
+
 
 /* Responsiv tilpasning */
 @media (max-width: 768px) {
@@ -297,4 +305,14 @@ nav ul li a.active {
 
 .footer.img {
   height: 10rem;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.footer p {
+  font-size: 0.9rem;
+  font-weight: 600;  
 }

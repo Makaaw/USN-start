@@ -1,5 +1,16 @@
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+ }
+
+/*lagt til html og tre første linjer i body, for å dekke heile skjerm*/  
+
 /* Bakgrunn */
 body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
   background-color: white; /*  #DFE1E3; /* Endrer bakgrunnen til hvit */
   font-family: 'Roboto', sans-serif; /* Setter fonten til Roboto */
   font-size: 16px;
@@ -10,20 +21,16 @@ body {
 /* Logo */
 #logo {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 130px; /* endre bredden etter behov */
+  top: 0rem;
+  left: 3rem;
+  width: 10rem; /* endre bredden etter behov*/
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
-  border-radius: 10px;
 }
-
 
 /* Slagord */
 #slagord {
-  font-size: 3rem;
-  margin-left: 10rem;
-  margin-top: 6rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  margin: 8rem 0 4rem 12rem;
   text-align: left;
   font-weight: lighter;
 }
@@ -31,8 +38,8 @@ body {
 /* Allerede medlem seksjon */
 .member-section {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: flex-end;  /*horisontal posisjon for flex-item*/
+  align-items: center; /*vertikal posisjon for flex-item*/
   margin: 10px;
 }
 
@@ -57,24 +64,22 @@ body {
 }
 
 .member-button:hover {
-  background-color: #D1CCBD;
+  background-color: #7E7365;
   color: white;
   transform: scale(1.05);
 }
 
-/* Bokser */
-.container {
+/* Bokser med bilder*/
+.container-bilder {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  margin: 0 auto;
   margin-bottom: 20px;
-  gap: 10px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */
-  position: relative; 
+  position: relative;
+  gap: 10px; /* legger til et gap/mellomrom på 10px mellom kolonnene i flex-boksen */ 
 }
 
-/* Bilde */
 .box {
   margin: auto; /* endre størrelsen på margene etter behov */
   text-align: center;
@@ -91,17 +96,13 @@ body {
   border-radius: 10px; /* endrer hjørneradius på bildet */
 }
 
-/* Tekst */
 .box p {
   font-size: 1.2rem;
   font-weight: 600; /*semibold*/
 }
 
 /* CTA-knapp */
-.cta-button {
-  position: absolute;
-  bottom: 80px;
-  right: 2px;
+.cta-button { 
   background-color: #16668b;;
   color: black;
   padding: 6px 12px;
@@ -113,6 +114,12 @@ body {
   line-height: 1.4; /* Juster linjehøyde for å bryte teksten på to linjer */
   width: 190px; /* Endre bredden til passende størrelse */
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
+}
+
+.container-bilder .cta-button {
+  position: absolute;
+  bottom: 80px;
+  right: 2px;
 }
 
 .cta-button:hover {
@@ -153,9 +160,8 @@ nav ul li a.active {
 }
 
 
-
 /* Main section */
-/* Hovedseksjonen med lysere bakgrunnsfarge */
+/* Første hovedseksjonen med lysere bakgrunnsfarge */
 .main-section {
   background-color: #D1CCBD;
   display: flex;
@@ -184,7 +190,7 @@ nav ul li a.active {
 .box-main h2 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 /* Ikoner og tekst for verdiboksene */
@@ -208,15 +214,16 @@ nav ul li a.active {
  }                      
  
  #innovasjon{
-  margin-left: 26px;  /*Ulike størrelse for å få teksten likt plassert*/
+  margin-left: 26px;  /*Ulik størrelse for å få teksten likt plassert*/
  }
 
 /* Bildet i tilbyr-boksen */
 .box-main img {
-  max-width: 100%;
-  margin-top: 20px;
+  width: 90%;
+  margin: auto;
+  display: block;
   border-radius: 36px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Sitatelementene */
@@ -242,8 +249,7 @@ blockquote {
 .map img {
   max-width: 100%;
   margin-top: 20px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
 }
 
 address {
@@ -269,29 +275,24 @@ address {
   color: #111111;
 }
 
-/*Main section 2*/
+/*Main section del 2*/
 .main-section2 {
   background-color: #7E7365;
   color: #fff;
-}
-
-.container2 {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  /*min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
-  /*max-width: calc(100% - 40px); /* Juster maks bredde basert på containerens padding */
 }
 
-.row2 {
+.row {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .column-half {
-  flex-basis: 40%;
-  
+  flex-basis: 40%;   /*Ikkje ta opp heile sida*/  
 }
 
 .main-section2 h2 {
@@ -307,8 +308,7 @@ address {
   text-align: left;
 }
 
-
-.column-half2 {
+.column1 {
   flex-basis: 66.6%;
   display: flex;
   flex-direction: column;
@@ -331,7 +331,7 @@ address {
 }
 
 
-.column-half3 {
+.column2 {
   flex-basis: 33.3%;
   display: flex;
   flex-direction: column;
@@ -359,11 +359,21 @@ address {
 
 .bookingbutton {
   display: block;
+  background-color: white;
+  color: black;
+  text-decoration: none;
   margin: 10px 0;
   padding: 10px 20px;
   border-radius: 20px;
   align-items: center;
   font-weight: bold;
+  border: none;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
+}
+
+.booking-button:hover {
+  color: black;
+  transform: scale(1.05);
 }
 
 .main-section2 .cta-button {
@@ -375,9 +385,14 @@ address {
   margin-left: 20px;
 }
 
+.main-section2 h3 {
+  text-align: left;
+  padding-bottom: 20px;
+}
+
 .tenants{
   margin: 20px 100px;
-  padding-bottom: 80px;
+  padding-bottom: 120px;
 }
 
 .names {
@@ -408,7 +423,7 @@ address {
 
 
 .footer__text {
-  margin-left: 20px;
+  margin: 20px;
   font-size: 0.9rem;
   font-weight: 600;
   padding-bottom: 20px;
@@ -439,13 +454,16 @@ address {
 /* Tittel */
 #tittel {
   font-size: 32px;
-  margin-left: 230px;
-  margin-top: 12rem;
-  margin-bottom: 80px;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  margin-bottom: 20px;
   font-weight: 400; /* velger Roboto Regular */
-  font-size: 48px;
+  font-size: 64px;
 }
 
+.container-bilder{
+  padding: 1rem 0 0 0;
+}
 /* Boksene */
 .box-main_fas {
   padding: 15px;
@@ -462,7 +480,6 @@ address {
   top: 100%;
   left: 0;
   width: 100%;
-  /*height: 300px; /* settes til høyden på div-en */
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -476,45 +493,173 @@ address {
   width: 80%;
 }
 
+/*Underside medlemskap og priser*/
 
-/* Responsiv tilpasning */
-@media screen and (max-width: 768px) {
-  .box-main {
-    max-width: calc(50% - 20px); /* To bokser per rad på mindre skjermer */
+.header-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: white;
+  padding: 30px;
+  height: auto;
+  /* gap: 20px; */
+}
+
+.header-section img {
+  width: 100%;
+  max-width: 50rem;
+  margin: 0 auto;
+  height: auto;
+  margin-left: 20px;
+  border-radius: 10px; /* Tilføyer avrundede hjørner for konsistens */
+}
+
+
+.main-section_medlem {
+  background-color: white;
+  color: black;
+  margin: 0 auto;
+  padding: 20px;
+  padding-left: 40px;
+  text-align: center;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.container-medlem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.column {
+  width: 60%; /* 2/3 of the main section */
+}
+
+.plan ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.pris ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.plan li {
+  text-align: left;
+  line-height: 1.5;
+}
+
+.pris li {
+  text-align: right;
+  line-height: 1.5;
+}
+
+.medlemskap {
+  display: flex;
+  align-items: center;
+}
+
+.medlemskap .plan, 
+.medlemskap .pris {
+  flex: 1;
+}
+
+.main-section_medlem .box-wrapper {
+  text-align: center;
+  width: 30%; /* 1/3 of the main section */
+}
+
+.main-section_medlem .box2 {
+  color: white;
+  width: 80%;
+  border-radius: 20px;
+}
+
+#rabatt {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*innmelding*/
+.innmelding {
+  background-color: #D1CCBD;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+.innmelding h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form textarea {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+form input[type="checkbox"] {
+  margin-right: 5px;
+  transform: scale(1.5);
+  vertical-align: middle;
+}
+
+form .checkbox-label {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+form .checkbox-label label {
+  vertical-align: middle;
+  margin-bottom: 0;
+}
+
+form button[type="submit"] {
+  background-color: hsl(29, 92%, 50%);
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+
+
+
+
+@media (max-width: 768px) {
+  /* CSS for skjermer med maks bredde 768px (f.eks. mobil) */
+  .header-section {
+    grid-template-columns: 1fr; /* Endrer til én kolonne */
+    grid-gap: 20px; /* Legger til plass mellom elementene */
   }
-  body {
-    font-size: 0.8rem;
+  
+  .header-section img {
+    max-width: 100%; /* Fyller den tilgjengelige bredden */
+    margin: 0; /* Fjerner senterjusteringen */
   }
 
-  .navbar a { font-size: 0.8rem; /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ }
-
-
-  .row2{
-    flex-wrap: wrap; /*Bryte på mindre skjermer*/
-    flex-direction: column; 
-   }
- 
-   .column-half .column-half2, .column-half3 {
-     flex-basis: 100%;
-     max-width: 100%;
-   }}
-
-
-@media screen and (max-width: 480px) {
-  .box-main {
-    max-width: calc(100% - 20px); /* Én boks per rad på veldig små skjermer */
+  .header-section #tittel {
+    text-align: center;
   }
-  body {
-    font-size: 0.8rem;
+  
+  .header-section img.responsive-image {
+    margin-top: 20px; /* Legger til toppmargen */
   }
-  .navbar a { font-size: 0.8rem; /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ } 
-
-  .row2{
-    flex-wrap: wrap; /*Bryte på mindre skjermer*/
-    flex-direction: column; 
-   }
- 
-   .column-half .column-half2, .column-half3 {
-     flex-basis: 100%;
-     max-width: 100%;
-   } }
+}

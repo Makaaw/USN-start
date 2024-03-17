@@ -9,11 +9,8 @@
       href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
     />
     <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/e11eebd0c1.js"
-      crossorigin="anonymous"
-    ></script>
-    <!--Skalerbare ikon frå FontAwesome-->
+    <link rel="stylesheet" href="responsiv.css" />
+    <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
   </head>
   <body>
     <!-- Allerede medlem seksjon -->
@@ -32,52 +29,46 @@
     </h1>
 
     <!-- Bokser -->
-    <div class="container">
+    <div class="container-bilder">
       <div class="box">
-        <img src="Kontor_privat.jpg" alt="Kontor" />
+        <img src="Bilder/Kontor_privat.jpg" alt="Kontor" />
         <p>Privat kontor</p>
       </div>
       <div class="box">
-        <img src="Kontorlandskap.jpg" alt="Kontorlandskap" />
+        <img src="Bilder/Kontorlandskap.jpg" alt="Kontorlandskap" />
         <p>Arbeidsplass i kontorlandskap</p>
       </div>
       <div class="box">
-        <img src="Møterom.jpg" alt="Møterom" />
+        <img src="Bilder/Møterom.jpg" alt="Møterom" />
         <p>Møterom</p>
         <!-- CTA-knapp -->
-        <a href="#" class="cta-button">SE VÅRE ULIKE MEDLEMSKAPSPLANER</a>
+        <a href="medlem.html" class="cta-button">SE VÅRE ULIKE MEDLEMSKAPSPLANER</a>
       </div>
     </div>
 
     <!-- Navbar -->
     <div class="navbar">
-      <a class="active" href="#">Hjem</a>
-      <a href="#">Fasiliteter</a>
-      <a href="#">Bli medlem</a>
+      <a class="active" href="index.html">Hjem</a>
+      <a href="fasiliteter.html">Fasiliteter</a>
+      <a href="medlem.html">Bli medlem</a>
       <a href="OmOss.html">Om oss</a>
     </div>
-
-    <!--Main section-->
+    
+    <!--Main section del 1-->
     <div class="main-section">
       <div class="box-main">
-        <h2>Våre verdier:<br /></h2>
+        <h2>Våre verdier:<br></h2>
         <div class="value">
           <i class="fa-solid fa-lightbulb custom-icon"></i>
-          <p id="innovasjon">
-            Vi driver innovasjon ved å skape et miljø som stimulerer og utvikler
-            nye ideer og innovasjoner.
-          </p>
+          <p id="innovasjon">Vi driver innovasjon ved å skape et miljø som stimulerer og utvikler nye ideer og innovasjoner.</p>
         </div>
         <div class="value">
           <i class="fa-solid fa-leaf"></i>
-          <p>
-            Vi er opptatt av miljøvennlige praksiser og jobber aktivt med å
-            redusere vårt energiforbruk for å sikre en bærekraftig fremtid.
-          </p>
+          <p>Vi er opptatt av miljøvennlige praksiser og jobber aktivt med å redusere vårt energiforbruk for å sikre en bærekraftig fremtid.</p>
         </div>
       </div>
       <div class="box-main">
-        <h2>Vi tilbyr:<br /></h2>
+        <h2>Vi tilbyr:<br></h2>
         <ul>
           <li>Høyhastighetsinternett</li>
           <li>Møterom</li>
@@ -85,26 +76,22 @@
           <li>Print, scanning</li>
           <li>Gameroom</li>
         </ul>
-        <img src="Gameroom.jpg" alt="Gameroom" />
+        <img src="Bilder/gamingroom.jpg" alt="Gameroom">
       </div>
       <div class="box-main">
         <blockquote>
-          <p>
-            <br /><br />"Med kombinasjonen av inspirerende mennesker og ett
-            fantastisk tilbud av fasiliteter, gir USNStart meg den perfekte
-            arbeidsplassen for å nå mine mål"
-          </p>
+          <p><br><br>"Med kombinasjonen av  inspirerende mennesker og ett fantastisk tilbud av fasiliteter, gir USNStart meg den perfekte arbeidsplassen for å nå mine mål"</p>
           <cite>-Sitat fra medlem</cite>
         </blockquote>
-        <a href="#" id="bqlink"
-          >Se tilbakemeldinger fra flere av våre medlemmer</a
-        >
+        <a href="#" id="bqlink">Se tilbakemeldinger fra flere av våre medlemmer</a>
       </div>
       <div class="box-main">
         <h2>Her finner du oss:</h2>
         <div class="map">
-          <img src="Kart.png" alt="Kart" />
-          <address>Adresse: Gullbringvegen 36, 3800 Bø</address>
+          <img src="Bilder/Kart2.png" alt="Kart">
+          <address>
+            Adresse: Gullbringvegen 36, 3800 Bø
+          </address>
           <div class="social-icons">
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
@@ -114,85 +101,65 @@
       </div>
     </div>
 
-    <!--Main section 2 del-->
-    <div class="main-section2">
-      <div class="container2">
-        <div class="row2">
+    <!--Main section del 2-->
+    <div class="main-section2">     
+        <div class="row">
           <div class="column-half">
             <h2>500 m<sup>2</sup></h2>
           </div>
           <div class="column-half">
-            <p class="offer-text">
-              <br /><br /><br /><br /><br /><br />Med mål om å skape et
-              samlingspunkt for studententreprenører og fagfolk, inkludert de
-              fra lokale bedrifter, som ønsker å arbeide i et felleskaplig og
-              dynamisk miljø fremfor isolerte hjemmekontorer.
-            </p>
+            <p class="offer-text"><br><br><br><br><br><br>Med mål om å skape et samlingspunkt for studententreprenører og fagfolk, inkludert de fra lokale bedrifter, som ønsker å arbeide i et felleskaplig og dynamisk miljø fremfor isolerte hjemmekontorer.</p>
           </div>
         </div>
-      </div>
-
-      <div class="container2">
-        <div class="row2">
-          <div class="column-half2">
+      
+        <div class="row">
+          <div class="column1">
             <div class="membership-container">
               <h3>Vi tilbyr medlemskap som passer for enhver:</h3>
               <ul class="membership-list">
-                <li>
-                  Dagspass <br />
-                  - perfekt for å teste ut miljøet
-                </li>
-                <li>
-                  Månedlig medlemskap <br />
-                  - når du trenger ny inspirasjon og ett avbrekk fra
-                  hjemmekontoret
-                </li>
-                <li>
-                  Årlig medlemskap <br />
-                  - for deg som ønsker en fast kontorplass med alle fasiliteter
-                  inkludert
-                </li>
-                <li>
-                  Studentmedlemskap <br />
-                  - for deg som vil utvikle dine ferdigheter og bygge nettverk
-                </li>
+                <li>Dagspass <br> - perfekt for å teste ut miljøet</li>
+                <li>Månedlig medlemskap <br> - når du trenger ny inspirasjon og ett avbrekk fra hjemmekontoret </li>
+                <li>Årlig medlemskap <br> - for deg som ønsker en fast kontorplass med alle fasiliteter inkludert </li>
+                <li>Studentmedlemskap <br>  - for deg som vil utvikle dine ferdigheter og bygge nettverk </li>
               </ul>
             </div>
           </div>
-          <div class="column-half3">
-            <div class="box-wrapper">
+          <div class="column2">
+             <div class="box-wrapper">
               <div class="box2">
                 <p class="box-text">Allerede medlem?</p>
                 <p class="box-text">Book din arbeidsplass nå!</p>
-                <button class="bookingbutton">BOOK HER</button>
+                <a href="#" class="bookingbutton">BOOK HER</a>
               </div>
-              <a href="#" class="cta-button">SE VÅRE ULIKE MEDLEMSKAPSPLANER</a>
+              <a href="medlem.html" class="cta-button">SE VÅRE ULIKE MEDLEMSKAPSPLANER</a>
             </div>
           </div>
         </div>
-      </div>
+      
       <div class="tenants">
-        <h3>Våre leietakere idag:</h3>
-        <div class="names">
-          <div class="name">Revisorteam</div>
-          <div class="name">YourCompanion</div>
-          <div class="name">GreenEnergy</div>
-          <div class="name">VismaAI</div>
+          <h3>Våre leietakere idag:</h3>
+          <div class="names">
+            <div class="name">Revisorteam</div>
+            <div class="name">YourCompanion</div>
+            <div class="name">GreenEnergy</div>
+            <div class="name">VismaAI</div>
+          </div>         
         </div>
       </div>
+  
+  <!--footer-->
+ <footer class="footer">
+    <div class="footer__text">
+      USNStart Coworking Space | Gullbringvegen 36, 3800 Bø<br>
+      Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
     </div>
-
-    <!--footer-->
-    <footer class="footer">
-      <div class="footer__text">
-        USNStart Coworking Space | Gullbringvegen 36, 3800 Bø<br />
-        Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
-      </div>
-      <div class="social-icons">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-      </div>
-    </footer>
+   <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+   </div>
+  </footer> 
+  
+    
   </body>
 </html>
