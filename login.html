@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medlems-login</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsiv.css" />
+    <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
+  </head>
+  <body>
+    <div class="header-section">
+        <h1>Innlogging</h1>
+    </div>
+    <div class="main-section" id="login">
+   <form id="login-form">
+    <input type="text" id="username-input" name="username" placeholder="Brukernavn">
+    <input type="password" id="password-input" name="password" placeholder="Passord">
+    <button type="submit">Logg inn</button>
+    <p> Bare for testing: Brukernavn = brukernavn og Passord = passord</p>
+    </form>
+   </div>
+
+  <script src = "login.js"></script>  <!--Må plasserest etter form for at skjema skal lastast inn før scriptet kjører-->
+  </body>
+  </html>
