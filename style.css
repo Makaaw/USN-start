@@ -664,6 +664,11 @@ form button[type="submit"] {
   margin-left: 20px;
 }
 
+#policy {
+  margin: 60px;
+  
+}
+
 /*Log in*/
 #login {
   background-color: white;
