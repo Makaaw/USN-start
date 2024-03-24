@@ -39,3 +39,39 @@
      flex-basis: 100%;
      max-width: 100%;
    } }
+
+  @media (max-width: 768px) {
+    /* CSS for skjermer med maks bredde 768px (f.eks. mobil) */
+    .header-section {
+      grid-template-columns: 1fr; /* Endrer til én kolonne */
+      grid-gap: 20px; /* Legger til plass mellom elementene */
+    }
+    
+    .header-section img {
+      max-width: 100%; /* Fyller den tilgjengelige bredden */
+      margin: 0; /* Fjerner senterjusteringen */
+    }
+  
+    .header-section #tittel {
+      text-align: center;
+    }
+    
+    .header-section img.responsive-image {
+      margin-top: 20px; /* Legger til toppmargen */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .names {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .name {
+      margin-right: 20px;
+    }
+  
+    .name:last-child {
+      margin-right: 0;
+    }
+  }

@@ -1,7 +1,18 @@
 /*Farger: Hvit:#dfe1e3, Mørk: #7e7365, Lys beige: #d1ccbd */
 
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+ }
+
+/*lagt til html og tre første linjer i body, for å dekke heile skjerm*/  
+
 /* Bakgrunn */
 body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
   background-color: white; /* Endrer bakgrunnen til hvit */
   font-family: "Roboto", sans-serif; /* Setter fonten til Roboto */
 }
@@ -109,10 +120,11 @@ nav ul li a.active {
   padding: 6px 12px;
   border-radius: 30px;
   text-align: center;
+  text-decoration: none;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600; /*semibold*/
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition-duration: 0.4s;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
@@ -303,6 +315,50 @@ nav ul li a.active {
   padding: 5rem;
 }
 
+
+.footer {
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /*flex-start*/
+  align-items: center; /*flex-start*/
+  font-size: 1rem;
+  line-height: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.footer__text {
+  margin: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.footer .social-icons{
+  padding-right: 40px;
+}
+
+/* Ikoner for sosiale medier */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #111111;
+}
+
+/*
 .footer.img {
   height: 10rem;
 }
@@ -315,4 +371,9 @@ nav ul li a.active {
 .footer p {
   font-size: 0.9rem;
   font-weight: 600;  
+}
+*/
+
+a {
+  color: black;
 }

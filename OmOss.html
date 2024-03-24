@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OmOss</title>
     <link rel="stylesheet" href="styleOmOss.css" />
+    <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
@@ -14,7 +15,7 @@
     <!-- Allerede medlem seksjon -->
     <div class="member-section">
       <p>Allerede medlem?</p>
-      <button class="member-button">Logg inn</button>
+      <a href="login.html" class="member-button">Logg inn</a>
     </div>
 
     <!-- Header -->
@@ -37,10 +38,10 @@
     </div>
 
     <div class="main-container">
-      <h1 class="values-header">Våre verdier</h1>
+      <h1 id="Våre verdier" class="values-header">Våre verdier</h1>
       <div class="values-container">
         <div class="value-box">
-          <img src="Bilder/IkonBærekraft.png" alt="Ikon 1" />
+          <i class="fa-solid fa-leaf"></i> <!--<img src="Bilder/IkonBærekraft.png" alt="Ikon 1" />-->
           <h3>Bærekraft</h3>
           <p>
             Vi er opptatt av miljøvennlige praksiser og jobber aktivt med å
@@ -48,7 +49,7 @@
           </p>
         </div>
         <div class="value-box">
-          <img src="Bilder/IkonInnovasjon.png" alt="Ikon 2" />
+          <i class="fa-solid fa-lightbulb custom-icon"></i> <!--<img src="Bilder/IkonInnovasjon.png" alt="Ikon 2" />-->
           <h3>Innovasjon</h3>
           <p>
             Vi vil fremme kreativitet, eksperimentering og utvikling av nye
@@ -56,15 +57,15 @@
           </p>
         </div>
         <div class="value-box">
-          <img src="Bilder/IkonSammarbeid.jpg" alt="Ikon 3" />
-          <h3>Sammarbeid</h3>
+          <i class="fa-solid fa-people-roof"></i>  <!--<img src="Bilder/IkonSammarbeid.jpg" alt="Ikon 3" />-->
+          <h3>Samarbeid</h3>
           <p>
             Vi vil oppmuntre til teamarbeid, kunnskapsdeling og gjensidig støtte
             blant medlemmene for å fremme et godt samarbeidsmiljø.
           </p>
         </div>
         <div class="value-box">
-          <img src="Bilder/IkonFleksibilitet.jpg" alt="Ikon 4" />
+          <i class="fa-solid fa-shuffle"></i> <!--<img src="Bilder/IkonFleksibilitet.jpg" alt="Ikon 4" />-->
           <h3>Fleksibilitet</h3>
           <p>
             Vi tilbyr tilpasningsdyktige arbeidsområder, medlemskapsplaner og
@@ -111,7 +112,7 @@
       <div class="header-text">
         <h1>Kontakt oss</h1>
         <h2>Har du spørsmål eller tilbakemeldinger?</h2>
-        <p>Ta gjerne kontakt med oss!</p>
+        <a href="mailto:usnstart@mail.no"><p>Ta gjerne kontakt med oss!</p></a>
       </div>
       <div class="header-image">
         <img src="Bilder/KontaktOss.jpg" alt="Bilde relatert til kontaktinformasjon" />
@@ -171,7 +172,7 @@
     </div>
     <div class="header-section">
       <div class="header-text">
-        <h1>Tilbakemeldinger</h1>
+        <h1 id="Tilbakemeldinger">Tilbakemeldinger</h1>
         <h2>
           Våre kunder elsker USNStart Coworking Space! Her er hva noen av dem
           har å si om sin opplevelse hos oss:
@@ -205,7 +206,7 @@
         <h2>Kari, designer:</h2>
         <h3>
           Jeg elsker den moderne og innbydende atmosfæren på USNStart. Det er
-          flott å ha et slikt fellesskap av likesinnede mennesker rundt meg.!
+          flott å ha et slikt fellesskap av likesinnede mennesker rundt meg!
         </h3>
       </div>
     </div>
@@ -215,14 +216,17 @@
         om USNStart Coworking Space. Bli med oss i dag og opplev det selv!
       </h2>
     </div>
-    <div class="footer">
-      <p>USNStart Coworking Space | Gullbringvegen 36, 3800 Bø</p>
-      <p>
-        Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
-      </p>
-      <img src="Bilder/Facebook.png" alt="Facebook logo" />
-      <img src="Bilder/Snapchat.png" alt="Snapchat logo" />
-      <img src="Bilder/Instagram.png" alt="Instagram logo" />
-    </div>
+     <!--footer-->
+ <footer class="footer">
+  <div class="footer__text">
+    USNStart Coworking Space | Gullbringvegen 36, 3800 Bø<br>
+    Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
+  </div>
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+ </div>
+</footer> 
   </body>
 </html>
