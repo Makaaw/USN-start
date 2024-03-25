@@ -250,40 +250,68 @@ nav ul li a.active {
 
 
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .contact-section {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  
+  .åpningstider-section {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+  
+  .kommetil {
+    grid-column: 1 / 2;
+    grid-row: 4;
   }
 }
+
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #d1ccbd;
   padding-top: 30px;
 }
+
 .adress-section {
-  padding: 20px;
+  padding: 10px;
   margin: 20px;
 }
-.info-section {
-  padding-top: 200px;
-  text-align: center;
+
+.adress-section img {
+  max-width: 80%;
 }
+
+.mer-info {
+  align-items: center;
+  align-self: center;
+}
+
 .åpningstider-section {
+  margin: 20px;
   background: white;
   width: fit-content;
   padding: 10px;
   border-radius: 15px;
-  align-items: center;
+  border: 2px solid black;
 }
+
+.kommetil {
+  padding: 20px;
+}
+
+
+
+
 .container {
   display: flex;
   align-items: center;
   background: white;
   width: fit-content;
-  height: 100 px;
+  height: 40px;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
 }
 .socialmedia {
@@ -367,7 +395,7 @@ nav ul li a.active {
   justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
 }
 
-.social-icons a {
+.social-icons i {
   margin-right: 10px;
 }
 
@@ -394,4 +422,9 @@ nav ul li a.active {
 
 a {
   color: black;
+}
+
+.socialmedia i {
+  font-size: 40px;
+  margin-right: 10px;
 }

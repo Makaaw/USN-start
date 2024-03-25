@@ -417,7 +417,7 @@ address {
   justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
 }
 
-.social-icons a {
+.social-icons i {
   margin-right: 10px;
 }
 
