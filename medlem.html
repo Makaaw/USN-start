@@ -31,6 +31,7 @@
         <a href="fasiliteter.html">Fasiliteter</a>
         <a class="active" href="medlem.html">Bli medlem</a>
         <a href="OmOss.html">Om oss</a>
+        <a href="kontaktOss.html">Kontakt oss</a>
       </div>
 
     <!--Main section-->
@@ -64,7 +65,7 @@
          <div class="box2">
            <p class="box-text" id="rabatt">STUDENTRABATT<br><br></p>
            <p class="box-text">9000,-/semester</p>
-           <a href="#" class="bookingbutton">BOOK HER</a>
+           <a href="medlem.html#skjema" class="bookingbutton">Bli medlem!</a>
          </div>
          
      </div>
@@ -74,13 +75,9 @@
     <!--registreringsskjema-->
     <div class="innmelding">
     <h1>Innmelding</h1>
-    <form>
-        <label for="mobiltelefon">Mobiltelefon</label>
-        <input type="tel" id="mobiltelefon" name="mobiltelefon" required>
-        <br>
-        <label for="epost">E-post</label>
-        <input type="email" id="epost" name="epost" required>
-        <br>
+    <p>Fyll ut skjemaet nedenfor for å bli medlem. Alle felt er obligatoriske.</p>
+    <form id="skjema">
+        <h2>Personalia</h2>
         <label for="fornavn">Fornavn</label>
         <input type="text" id="fornavn" name="fornavn" required>
         <br>
@@ -95,18 +92,38 @@
         <br>
         <label for="postnr">Postnr/sted</label>
         <input type="text" id="postnr" name="postnr" required>
-      
+        <h2>Kontaktinformasjon</h2> 
+        <label for="mobiltelefon">Mobiltelefon</label>
+        <input type="tel" id="mobiltelefon" name="mobiltelefon" required>
+        <br>
+        <label for="epost">E-post</label>
+        <input type="email" id="epost" name="epost" required>
+        <br>
+        <h2>Medlemskap</h2> 
+        <label for="medlemskapstype">Medlemskapstype:</label>
+        <select id="medlemskapstype" name="medlemskapstype" required>
+         <option value="">-- Velg medlemskapstype --</option>
+         <option value="student">Student semester</option>
+         <option value="privat">Privat kontor</option>
+         <option value="dag">Kontorlandskap flex (betal per dag)</option>
+         <option value="måned">Kontorlandskap måned</option>
+         <option value="år">Kontorlandskap år</option>
+       </select><br>
+       <h2>Samtykke</h2>
         <div class="checkbox-label">
             <input type="checkbox" id="samtykke" name="samtykke" required>
-            <label for="samtykke">Samtykke til lagring av persondata</label>
+            <label for="samtykke">Jeg samtykker til at mine personopplysninger kan lagres og behandles av selskapet i henhold til personvernreglene.</label>
             <button type="submit">Bli medlem</button>  
         </div>
       
         
       </form>
-      
+      <p id="takk" style="display: none;">Takk for at du har meldt deg inn hos oss! Vi tar kontakt med deg så snart som mulig.</p> 
+      <p>Les mer om vår <a href="personvern.html">personvernpolicy</a></p>
 
     </div>
+
+    <script src = "blimedlem.js"></script>
       
 
   <!--footer-->
@@ -116,9 +133,9 @@
       Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
     </div>
    <div class="social-icons">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-snapchat"></i></a>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fab fa-instagram"></i>
+    <i class="fa-brands fa-snapchat"></i>
    </div>
   </footer> 
   

@@ -1,7 +1,18 @@
 /*Farger: Hvit:#dfe1e3, Mørk: #7e7365, Lys beige: #d1ccbd */
 
+html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+ }
+
+/*lagt til html og tre første linjer i body, for å dekke heile skjerm*/  
+
 /* Bakgrunn */
 body {
+  margin: 0px;
+  min-height: 100%;
+  width: 100%;
   background-color: white; /* Endrer bakgrunnen til hvit */
   font-family: "Roboto", sans-serif; /* Setter fonten til Roboto */
 }
@@ -41,7 +52,6 @@ p {
 
 /* Tittel */
 #tittel {
-  font-size: 32px;
   margin-left: 230px;
   margin-top: 8rem;
   margin-bottom: 80px;
@@ -51,7 +61,7 @@ p {
 
 
 .responsive-image {
-  max-width: 70%;
+  max-width: 95%;
   height: auto;
   border-radius: 10px;
   text-align: center;
@@ -109,10 +119,11 @@ nav ul li a.active {
   padding: 6px 12px;
   border-radius: 30px;
   text-align: center;
+  text-decoration: none;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600; /*semibold*/
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition-duration: 0.4s;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
@@ -165,6 +176,10 @@ nav ul li a.active {
   height: 40px;
 }
 
+.value-box h3 {
+  font-weight: bold;
+}
+
 
 /* Responsiv tilpasning */
 @media (max-width: 768px) {
@@ -207,10 +222,17 @@ nav ul li a.active {
 .header-text {
   background-color: white;
   padding: 20px;
+  font-size: 32px;
+  /*margin-left: 2rem;*/
+  margin-top: 10rem;
+  margin-bottom: 20px;
 }
 
 .header-image {
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-image img {
   width: 100%;
@@ -220,40 +242,76 @@ nav ul li a.active {
   border-radius: 10px; /* Tilføyer avrundede hjørner for konsistens */
 }
 
-@media (max-width: 768px) {
+/* Tittel */
+#tittel {
+  font-weight: 400; /* velger Roboto Regular */
+  font-size: 64px;
+}
+
+
+
+@media only screen and (max-width: 768px) {
   .contact-section {
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  
+  .åpningstider-section {
+    grid-column: 1 / 2;
+    grid-row: 3;
+  }
+  
+  .kommetil {
+    grid-column: 1 / 2;
+    grid-row: 4;
   }
 }
+
 .contact-section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #d1ccbd;
   padding-top: 30px;
 }
+
 .adress-section {
-  padding: 20px;
+  padding: 10px;
   margin: 20px;
 }
-.info-section {
-  padding-top: 200px;
-  text-align: center;
+
+.adress-section img {
+  max-width: 80%;
 }
+
+.mer-info {
+  align-items: center;
+  align-self: center;
+}
+
 .åpningstider-section {
+  margin: 20px;
   background: white;
   width: fit-content;
   padding: 10px;
   border-radius: 15px;
-  align-items: center;
+  border: 2px solid black;
 }
+
+.kommetil {
+  padding: 20px;
+}
+
+
+
+
 .container {
   display: flex;
   align-items: center;
   background: white;
   width: fit-content;
-  height: 100 px;
+  height: 40px;
   margin: 10px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 15px;
 }
 .socialmedia {
@@ -303,6 +361,50 @@ nav ul li a.active {
   padding: 5rem;
 }
 
+
+.footer {
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /*flex-start*/
+  align-items: center; /*flex-start*/
+  font-size: 1rem;
+  line-height: 25px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.footer__text {
+  margin: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.footer .social-icons{
+  padding-right: 40px;
+}
+
+/* Ikoner for sosiale medier */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
+}
+
+.social-icons i {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #111111;
+}
+
+/*
 .footer.img {
   height: 10rem;
 }
@@ -315,4 +417,14 @@ nav ul li a.active {
 .footer p {
   font-size: 0.9rem;
   font-weight: 600;  
+}
+*/
+
+a {
+  color: black;
+}
+
+.socialmedia i {
+  font-size: 40px;
+  margin-right: 10px;
 }

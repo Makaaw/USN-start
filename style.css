@@ -55,10 +55,11 @@ body {
   padding: 6px 12px;
   border-radius: 30px;
   text-align: center;
+  text-decoration: none;
   display: inline-block;
   font-size: 0.8rem;
   font-weight: 600; /*semibold*/
-  cursor: pointer;
+  /*cursor: pointer;*/
   transition-duration: 0.4s;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) inset; /* legger til skyggeeffekt */
 }
@@ -84,7 +85,6 @@ body {
   margin: auto; /* endre størrelsen på margene etter behov */
   text-align: center;
   overflow: hidden; /* skjuler eventuell overflow */
-  flex: 1;
   min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
   max-width: calc(33% - 30px); /* Juster maks bredde basert på containerens padding */
 }
@@ -179,6 +179,10 @@ nav ul li a.active {
   flex: 1;
   min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
   max-width: calc(25% - 30px); /* Juster maks bredde basert på containerens padding */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /* Avstanden mellom boksene */
@@ -186,36 +190,46 @@ nav ul li a.active {
   margin-right: 10px;
 }
 
+.box-main:nth-of-type(1) {
+  /* Flex egenskaper for verdier-boksen */ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 /* Overskriftene */
 .box-main h2 {
   font-size: 1.1rem;
   font-weight: bold;
-  margin: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
 }
 
 /* Ikoner og tekst for verdiboksene */
 .value {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin-bottom: 20px;
+  /*flex-direction: row;*/
+  justify-content: flex-start;
+  margin: 20px;
 }
 
 .value i {
+  width: 30px;
   font-size: 22px;
   margin-right: 5px;
   color: black;
   align-self: flex-start;
 }
 
-.value p{
-  margin: 0;
-  margin-left: 20px;
- }                      
+.custom-icon {
+  width: 40px; /* Juster bredden etter behov */
+}
+
+.fa-solid {
+  width: 20px; /* Juster bredden etter behov */
+}                    
  
- #innovasjon{
-  margin-left: 26px;  /*Ulik størrelse for å få teksten likt plassert*/
- }
 
 /* Bildet i tilbyr-boksen */
 .box-main img {
@@ -259,21 +273,7 @@ address {
   text-align: right;
 }
 
-/* Ikoner for sosiale medier */
-.social-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
-}
 
-.social-icons a {
-  margin-right: 10px;
-}
-
-.social-icons i {
-  font-size: 20px;
-  color: #111111;
-}
 
 /*Main section del 2*/
 .main-section2 {
@@ -351,6 +351,7 @@ address {
   text-align: center;
   margin-bottom: 20px;
   margin-left: -10px;
+  border-radius: 20px;
 }
 
 .box-text {
@@ -385,27 +386,45 @@ address {
   margin-left: 20px;
 }
 
-.main-section2 h3 {
-  text-align: left;
-  padding-bottom: 20px;
-}
-
-.tenants{
-  margin: 20px 100px;
-  padding-bottom: 120px;
+.tenants {
+  background-color: #D1CCBD;
+  padding: 40px;
+  box-sizing: border-box;
 }
 
 .names {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 celler med lik bredde */
-  grid-gap: 20px; /* 20px avstand mellom cellene */
-  justify-content: center; /* sentrerer rutenettet horisontalt */
-  align-items: center; /*  sentrerer rutenettet vertikalt */
-}
-.name {
-  text-align: center; /* sentrerer tekst i cellene */
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 2rem;
+  justify-content: space-around;
+  text-align: center;
+  gap: 20px;
 }
 
+.name {
+  padding: 10px;
+  margin: 10px 10px;
+}
+
+.tenants h3 {
+  text-align: center;
+}
+
+/* Ikoner for sosiale medier */
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; /* Legg til denne linjen for å justere barna til høyre */
+}
+
+.social-icons i {
+  margin-right: 10px;
+}
+
+.social-icons i {
+  font-size: 20px;
+  color: #111111;
+}
 
 .footer {
   position: relative;
@@ -604,6 +623,7 @@ form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
 form input[type="date"],
+form input[type="password"],
 form textarea {
   width: 60%;
   padding: 10px;
@@ -640,26 +660,16 @@ form button[type="submit"] {
   margin-left: 20px;
 }
 
-
-
-
-@media (max-width: 768px) {
-  /* CSS for skjermer med maks bredde 768px (f.eks. mobil) */
-  .header-section {
-    grid-template-columns: 1fr; /* Endrer til én kolonne */
-    grid-gap: 20px; /* Legger til plass mellom elementene */
-  }
+#policy {
+  margin: 60px;
   
-  .header-section img {
-    max-width: 100%; /* Fyller den tilgjengelige bredden */
-    margin: 0; /* Fjerner senterjusteringen */
-  }
-
-  .header-section #tittel {
-    text-align: center;
-  }
-  
-  .header-section img.responsive-image {
-    margin-top: 20px; /* Legger til toppmargen */
-  }
 }
+
+/*Log in*/
+#login {
+  background-color: white;
+}
+
+
+
+
