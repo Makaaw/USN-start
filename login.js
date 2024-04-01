@@ -10,7 +10,7 @@ function handleLogin(event) {
   
   if (username === "brukernavn" && password === "passord") {
     // Riktig brukernavn og passord
-    window.location.href = "#";
+    window.location.href = "booking.html";
   } else {
     // Feil brukernavn og passord
     alert("Feil brukernavn eller passord");
