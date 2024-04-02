@@ -40,6 +40,16 @@
      max-width: 100%;
    } }
 
+   #logo {
+    width: 8rem;
+   }
+
+   #slagord {
+    font-size: 2.5rem;
+    text-align: left;
+    margin: 8rem 0 4rem 6rem;
+   }
+
   @media (max-width: 768px) {
     /* CSS for skjermer med maks bredde 768px (f.eks. mobil) */
     .header-section {
