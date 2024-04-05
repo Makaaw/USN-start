@@ -20,56 +20,36 @@ body {
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* velger Roboto Regular */
-  font-size: 40px;
-}
-
-.header-text h1 {
   font-size: 64px;
 }
+
 
 h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* velger Roboto Regular */
+  font-size: 48px;
 }
 h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* velger Roboto Regular */
+  font-size: 30px;
 }
-p {
+h4 {
   font-family: "Roboto", sans-serif;
-  font-weight: 400; /* velger Roboto Regular */
+  font-size: 24px;
+  font-weight: bold; /* velger Roboto Regular */
 }
 
 /* Logo */
 #logo {
-  position: absolute;
-  top: 0rem;
-  left: 3rem;
-  width: 10rem; /* endre bredden etter behov */
+  padding: 0px 40px;
+  width: 180px; /* endre bredden etter behov */
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
-  border-radius: 10px;
 }
 
-/* Tittel */
-#tittel {
-  margin-left: 230px;
-  margin-top: 8rem;
-  margin-bottom: 80px;
-  font-weight: 400; /* velger Roboto Regular */
-  font-size: 64px;
-}
-
-
-.responsive-image {
-  max-width: 95%;
-  height: auto;
-  border-radius: 10px;
-  text-align: center;
-}
 
 /* Navbar */
 .navbar {
-  margin-top: 5rem;
   background-color: #7e7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
   overflow: hidden;
   display: flex;
@@ -81,7 +61,7 @@ p {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 600; /*semibold*/
 }
 
@@ -156,8 +136,8 @@ nav ul li a.active {
 .value-box {
   background-color: white;
   border-radius: 10px;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  margin: 5px;
   flex: 1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   min-width: 250px; /* Minimum bredde for å unngå for smale bokser */
@@ -171,9 +151,8 @@ nav ul li a.active {
   margin-right: 10px;
 }
 
-.value-box img {
-  width: 40px;
-  height: 40px;
+.value-box i {
+  font-size: 22px;
 }
 
 .value-box h3 {
@@ -186,13 +165,16 @@ nav ul li a.active {
   .value-box {
     max-width: calc(50% - 20px); /* To bokser per rad på mindre skjermer */
   }
+
 }
+
 
 @media (max-width: 480px) {
   .value-box {
     max-width: calc(100% - 20px); /* Én boks per rad på veldig små skjermer */
   }
 }
+
 .mission-container {
   background-color: #7e7365;
   color: white;
@@ -210,44 +192,35 @@ nav ul li a.active {
   height: 50px;
   background-color: #d1ccbd;
 }
+
 .header-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: white;
-  padding-top: 30px;
-  height: auto;
-  /* gap: 20px; */
-}
-
-.header-text {
-  background-color: white;
-  padding: 20px;
-  font-size: 32px;
-  /*margin-left: 2rem;*/
-  margin-top: 10rem;
-  margin-bottom: 20px;
-}
-
-.header-image {
-  padding: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
+  background-color: white;
+  height: auto;
+  padding: 10px;
 }
-.header-image img {
-  width: 100%;
-  max-width: 30rem;
+
+.header-section img {
+  flex: 1;
+  max-width: 60%;
   margin: 0 auto;
   height: auto;
   border-radius: 10px; /* Tilføyer avrundede hjørner for konsistens */
 }
 
-/* Tittel */
-#tittel {
+#bildekontakt {
+  max-width: 40%;
+}
+
+
+.header-section .tittel {
+  flex: 1;
+  margin: 4rem;
   font-weight: 400; /* velger Roboto Regular */
   font-size: 64px;
 }
-
 
 
 @media only screen and (max-width: 768px) {
@@ -255,7 +228,7 @@ nav ul li a.active {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
   }
-  
+
   .åpningstider-section {
     grid-column: 1 / 2;
     grid-row: 3;
@@ -277,7 +250,9 @@ nav ul li a.active {
 .adress-section {
   padding: 10px;
   margin: 20px;
+  line-height: 2px;
 }
+
 
 .adress-section img {
   max-width: 100%;
@@ -335,7 +310,7 @@ nav ul li a.active {
 .tilbakemelding-box {
   margin-top: 50px;
   margin-bottom: 50px;
-  width: 200px; /* Bredde på boksen */
+  width: 250px; /* Bredde på boksen */
   background-color: white;
   text-align: center; /* Sentrerer teksten */
   position: relative; /* For posisjonering av bildet */

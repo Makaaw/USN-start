@@ -18,19 +18,18 @@ body {
   position: relative;
 }
 
+
 /* Logo */
 #logo {
-  position: absolute;
-  top: 0rem;
-  left: 3rem;
-  width: 10rem; /* endre bredden etter behov*/
+  padding: 0px 40px;
+  width: 180px; /* endre bredden etter behov*/
   height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
 }
 
 /* Slagord */
 #slagord {
   font-size: 3.5rem;
-  margin: 8rem 0 4rem 12rem;
+  margin: 4rem 0 4rem 12rem;
   text-align: left;
   font-weight: lighter;
 }
@@ -104,7 +103,7 @@ body {
 /* CTA-knapp */
 .cta-button { 
   background-color: #16668b;;
-  color: black;
+  color: white;
   padding: 6px 12px;
   border-radius: 10px;
   text-decoration: none;
@@ -124,7 +123,7 @@ body {
 
 .cta-button:hover {
   background-color: #0d3263;
-  color: black;
+  color: white;
   transform: scale(1.05);
 }
 
@@ -215,21 +214,12 @@ nav ul li a.active {
 }
 
 .value i {
-  width: 30px;
   font-size: 22px;
   margin-right: 5px;
   color: black;
   align-self: flex-start;
 }
 
-.custom-icon {
-  width: 40px; /* Juster bredden etter behov */
-}
-
-.fa-solid {
-  width: 20px; /* Juster bredden etter behov */
-}                    
- 
 
 /* Bildet i tilbyr-boksen */
 .box-main img {
@@ -238,6 +228,11 @@ nav ul li a.active {
   display: block;
   border-radius: 36px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.box-main #tilbakemeldingbilde {
+  width: 60%;
+  border-radius: 120px;
 }
 
 /* Sitatelementene */
@@ -264,6 +259,7 @@ blockquote {
   max-width: 100%;
   margin-top: 20px;
   border-radius: 0px;
+  border-radius: 10px;
 }
 
 address {
@@ -470,15 +466,6 @@ address {
   border-radius: 10px; /* endrer hjørneradius på bildet */
 }
 
-/* Tittel */
-#tittel {
-  font-size: 32px;
-  margin-left: 2rem;
-  margin-top: 10rem;
-  margin-bottom: 20px;
-  font-weight: 400; /* velger Roboto Regular */
-  font-size: 64px;
-}
 
 .container-bilder{
   padding: 1rem 0 0 0;
@@ -507,29 +494,38 @@ address {
 
 }
 
-.floorplan h2, img {
+.floorplan img {
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
+  padding-bottom: 40px;
 }
 
 /*Underside medlemskap og priser*/
 
 .header-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: white;
-  padding: 30px;
   height: auto;
-  /* gap: 20px; */
+  padding: 10px;
 }
 
 .header-section img {
-  width: 100%;
-  max-width: 50rem;
+  flex: 1;
+  max-width: 60%;
   margin: 0 auto;
   height: auto;
-  margin-left: 20px;
   border-radius: 10px; /* Tilføyer avrundede hjørner for konsistens */
+}
+
+
+
+.header-section .tittel {
+  flex: 1;
+  margin: 4rem;
+  font-weight: 400; /* velger Roboto Regular */
+  font-size: 64px;
 }
 
 
@@ -638,6 +634,10 @@ form input[type="checkbox"] {
   vertical-align: middle;
 }
 
+#medlemskapstype {
+  height: 40px; /* Juster høyden etter behov */
+}
+
 form .checkbox-label {
   align-items: center;
   display: flex;
@@ -660,8 +660,9 @@ form button[type="submit"] {
   margin-left: 20px;
 }
 
-#policy {
+.policy {
   margin: 60px;
+  padding-bottom: 20px;
   
 }
 
@@ -670,6 +671,10 @@ form button[type="submit"] {
   background-color: white;
 }
 
-
+.section-divider {
+  margin: 0;
+  height: 50px;
+  background-color: #d1ccbd;
+}
 
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>USNStart - OmOss</title>
     <link rel="stylesheet" href="styleOmOss.css" />
+    <link rel="stylesheet" href="responsiv.css" />
     <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
     <link
       rel="stylesheet"
@@ -12,23 +13,6 @@
     />
   </head>
   <body>
-    <!-- Allerede medlem seksjon -->
-    <div class="member-section">
-      <p>Allerede medlem?</p>
-      <a href="login.html" class="member-button">Logg inn</a>
-    </div>
-
-    <!-- Header -->
-    <div class="header-section">
-      <img src="Logo.png" alt="Logo" id="logo" />
-      <h1 id="tittel">Om oss</h1>
-      <img
-        src="Bilder/OmOssBilde.jpg"
-        class="responsive-image"
-        alt="Bilde av to personer som smiler i Workspace"
-      />
-    </div>
-
     <!-- Navbar -->
     <div class="navbar">
       <a href="index.html">Hjem</a>
@@ -38,12 +22,32 @@
       <a href="kontaktOss.html">Kontakt oss</a>
     </div>
 
+    <!-- Allerede medlem seksjon -->
+    <div class="member-section">
+      <p>Allerede medlem?</p>
+      <a href="login.html" class="member-button">Logg inn</a>
+    </div>
+    
+    <!-- Logo -->
+    <img src="Logo.png" alt="Logo" id="logo" />
+
+    <!-- Header -->
+    <div class="header-section">
+      <h1 class="tittel">Om oss</h1>
+      <img
+        src="Bilder/OmOssBilde.jpg"
+        class="responsive-image"
+        alt="Bilde av to personer som smiler i Workspace"
+      />
+    </div>
+
+
     <div class="main-container">
-      <h1 id="Våre verdier" class="values-header">Våre verdier</h1>
+      <h2 id="Våre verdier" class="values-header">Våre verdier</h2>
       <div class="values-container">
         <div class="value-box">
           <i class="fa-solid fa-leaf"></i> <!--<img src="Bilder/IkonBærekraft.png" alt="Ikon 1" />-->
-          <h3>Bærekraft</h3>
+          <h4>Bærekraft</h4>
           <p>
             Vi er opptatt av miljøvennlige praksiser og jobber aktivt med å
             redusere vårt energiforbruk for å sikre en bærekraftig fremtid.
@@ -51,7 +55,7 @@
         </div>
         <div class="value-box">
           <i class="fa-solid fa-lightbulb custom-icon"></i> <!--<img src="Bilder/IkonInnovasjon.png" alt="Ikon 2" />-->
-          <h3>Innovasjon</h3>
+          <h4>Innovasjon</h4>
           <p>
             Vi vil fremme kreativitet, eksperimentering og utvikling av nye
             ideer og løsninger blant gründere og studenter.
@@ -59,7 +63,7 @@
         </div>
         <div class="value-box">
           <i class="fa-solid fa-people-roof"></i>  <!--<img src="Bilder/IkonSammarbeid.jpg" alt="Ikon 3" />-->
-          <h3>Samarbeid</h3>
+          <h4>Samarbeid</h4>
           <p>
             Vi vil oppmuntre til teamarbeid, kunnskapsdeling og gjensidig støtte
             blant medlemmene for å fremme et godt samarbeidsmiljø.
@@ -67,7 +71,7 @@
         </div>
         <div class="value-box">
           <i class="fa-solid fa-shuffle"></i> <!--<img src="Bilder/IkonFleksibilitet.jpg" alt="Ikon 4" />-->
-          <h3>Fleksibilitet</h3>
+          <h4>Fleksibilitet</h4>
           <p>
             Vi tilbyr tilpasningsdyktige arbeidsområder, medlemskapsplaner og
             fasiliteter for å imøtekomme de ulike behovene til medlemmene.
@@ -77,7 +81,7 @@
     </div>
     <!-- Ny boks for "Oppdrag" -->
     <div class="mission-container">
-      <h1>Oppdrag</h1>
+      <h2>Oppdrag</h2>
       <p>
         Å skape et dynamisk og inspirerende arbeidsmiljø som fremmer samarbeid,
         innovasjon og entreprenørskap blant studenter og profesjonelle i
@@ -86,7 +90,7 @@
       </p>
     </div>
     <div class="history-container">
-      <h1>Vår historie</h1>
+      <h2>Vår historie</h2>
       <p>
         Historien til USNStart Coworking Space begynner med et ønske om å skape
         et dynamisk og innovativt miljø for entreprenører, studenter og
@@ -112,11 +116,11 @@
  
     <div class="header-section">
       <div class="header-text">
-        <h1 id="Tilbakemeldinger">Tilbakemeldinger</h1>
-        <p>
+        <h2 id="Tilbakemeldinger">Tilbakemeldinger</h2>
+        <h3>
           Våre kunder elsker USNStart Coworking Space! Her er hva noen av dem
           har å si om sin opplevelse hos oss:
-        </p>
+        </h3>
       </div>
       <div class="header-image">
         <img src="Bilder/desk.jpg" alt="Bilde relatert til kontaktinformasjon" />
@@ -126,41 +130,41 @@
     <div class="tilbakemelding-container">
       <div class="tilbakemelding-box">
         <img src="Bilder/Tilbakemelding1.png" alt="Bilde av Maria" />
-        <h2>Maria, entrepenør:</h2>
-        <h3>
+        <h3>Maria, entrepenør:</h3>
+        <p>
           USNStart Coworking Space har virkelig skapt et inspirerende miljø for
           entreprenører og kreative sinn. Jeg elsker å jobbe her hver dag!
-        </h3>
+        </p>
       </div>
       <div class="tilbakemelding-box">
         <img src="Bilder/Tilbakemelding2.png" alt="Bilde av Lars" />
-        <h2>Lars, gründer:</h2>
-        <h3>
+        <h3>Lars, gründer:</h3>
+        <p>
           Et fantastisk sted å jobbe og møte andre profesjonelle. Jeg har økt
           produktiviteten min siden jeg begynte å bruke USNStart Coworking
           Space.
-        </h3>
+        </p>
       </div>
       <div class="tilbakemelding-box">
         <img src="Bilder/Tilbakemelding3.png" alt="Bilde av Kari" />
-        <h2>Kari, designer:</h2>
-        <h3>
+        <h3>Kari, designer:</h3>
+        <p>
           Jeg elsker den moderne og innbydende atmosfæren på USNStart. Det er
           flott å ha et slikt fellesskap av likesinnede mennesker rundt meg!
-        </h3>
+        </p>
       </div>
     </div>
     <div class="tilbakemelding-footer">
-      <h2>
+      <h3>
         Disse tilbakemeldingene er bare et lite glimt av hva våre kunder synes
         om USNStart Coworking Space. Bli med oss i dag og opplev det selv!
-      </h2>
+      </h3>
     </div>
      <!--footer-->
  <footer class="footer">
   <div class="footer__text">
     USNStart Coworking Space | Gullbringvegen 36, 3800 Bø<br>
-    Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
+    Tlf: +47 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
   </div>
   <div class="social-icons">
     <i class="fa-brands fa-facebook"></i>

@@ -14,10 +14,21 @@
   </head>
   <body>
 
+     <!-- Navbar -->
+     <div class="navbar">
+      <a href="index.html">Hjem</a>
+      <a href="fasiliteter.html">Fasiliteter</a>
+      <a class="active" href="medlem.html">Bli medlem</a>
+      <a href="OmOss.html">Om oss</a>
+      <a href="kontaktOss.html">Kontakt oss</a>
+    </div>
+
+    <!-- Logo -->
+    <img src="Logo.png" alt="Logo" id="logo" />
+
     <!-- Header -->
     <div class="header-section">
-        <img src="Logo.png" alt="Logo" id="logo" />
-        <h1 id="tittel">Medlemskap og priser</h1>
+        <h1 class="tittel">Medlemskap og priser</h1>
         <img
           src="Bilder/members.jpg"
           class="responsive-image"
@@ -25,15 +36,7 @@
         />
       </div>
   
-      <!-- Navbar -->
-      <div class="navbar">
-        <a href="index.html">Hjem</a>
-        <a href="fasiliteter.html">Fasiliteter</a>
-        <a class="active" href="medlem.html">Bli medlem</a>
-        <a href="OmOss.html">Om oss</a>
-        <a href="kontaktOss.html">Kontakt oss</a>
-      </div>
-
+    <div class="section-divider"></div>
     <!--Main section-->
     <div class="main-section_medlem">
       <p>Velkommen til USNStart Coworking Space! <br> Vi tilbyr fleksible medlemskap og moderne fasiliteter for din arbeidsdag.</p>
@@ -75,7 +78,7 @@
     <!--registreringsskjema-->
     <div class="innmelding">
     <h1>Innmelding</h1>
-    <p>Fyll ut skjemaet nedenfor for å bli medlem. Alle felt er obligatoriske.</p>
+    <p id="melding">Fyll ut skjemaet nedenfor for å bli medlem. Alle felt er obligatoriske.</p>
     <form id="skjema">
         <h2>Personalia</h2>
         <label for="fornavn">Fornavn</label>
@@ -118,7 +121,7 @@
       
         
       </form>
-      <p id="takk" style="display: none;">Takk for at du har meldt deg inn hos oss! Vi tar kontakt med deg så snart som mulig.</p> 
+      <p id="takk" style="display: none;">Takk for at du har meldt deg inn hos oss! Du vil snart motta en epost med mer informasjon.</p> 
       <p>Les mer om vår <a href="personvern.html">personvernpolicy</a></p>
 
     </div>
@@ -130,7 +133,7 @@
   <footer class="footer">
     <div class="footer__text">
       USNStart Coworking Space | Gullbringvegen 36, 3800 Bø<br>
-      Tlf: 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
+      Tlf: +47 123123123 | E-post: usnstart@mail.no | Org. nr.: NO 999 999 999 MVA
     </div>
    <div class="social-icons">
     <i class="fa-brands fa-facebook"></i>
