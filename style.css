@@ -230,6 +230,8 @@ nav ul li a.active {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
 }
 
+
+
 .box-main #tilbakemeldingbilde {
   width: 60%;
   border-radius: 120px;
@@ -255,11 +257,17 @@ blockquote {
   flex-direction: column;
 }
 
-.map img {
-  max-width: 100%;
-  margin-top: 20px;
-  border-radius: 0px;
-  border-radius: 10px;
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 150%; 
+  width: 100%;
+  left: 0;
+  top: 0;
+  
 }
 
 address {

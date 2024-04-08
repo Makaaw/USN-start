@@ -403,3 +403,17 @@ a {
   font-size: 40px;
   margin-right: 10px;
 }
+
+.google-map {
+  padding-bottom: 50%;
+  position: relative;
+}
+
+.google-map iframe {
+  height: 150%;
+  width: 100%;
+  border-radius: 20px;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
