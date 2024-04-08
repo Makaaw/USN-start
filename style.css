@@ -238,8 +238,9 @@ nav ul li a.active {
 
 
 .box-main #tilbakemeldingbilde {
-  width: 60%;
-  border-radius: 120px;
+  width: 50%;
+  border-radius: 50%;
+  border: 3px solid #7E7365; /* Legger til en kant rundt bildet */
 }
 
 /* Sitatelementene */
