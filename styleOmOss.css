@@ -50,16 +50,17 @@ h4 {
 
 /* Navbar */
 .navbar {
-  background-color: #7e7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
+  background-color: #7E7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
   overflow: hidden;
-  display: flex;
-  justify-content: flex-end; /* Justerer elementene til høyre */
 }
 
 .navbar a {
   color: #fff; /* Endrer farge på linkene til hvit */
+  float: left;
+  display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 10px;
+  padding-left: 25px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600; /*semibold*/
@@ -67,15 +68,20 @@ h4 {
 
 .navbar a:hover {
   color: #ddd;
-  color: #d1ccbd;
+  color: #D1CCBD;
 }
 
 .navbar a.active {
-  color: #d1ccbd;
+  color: #D1CCBD;
 }
 
 nav ul li a.active {
   cursor: default;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+  display: none;
 }
 
 
@@ -238,6 +244,14 @@ nav ul li a.active {
     grid-column: 1 / 2;
     grid-row: 4;
   }
+
+  .contact-section h3 {
+    font-size: 20px;
+  }
+
+  .socialmedia h3 {
+    font-size: 20px;
+  }
 }
 
 .contact-section {
@@ -250,7 +264,7 @@ nav ul li a.active {
 .adress-section {
   padding: 10px;
   margin: 20px;
-  line-height: 2px;
+  line-height: 15px;
 }
 
 

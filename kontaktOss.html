@@ -11,16 +11,21 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <script src="navbar.js"></script>
   </head>
   <body>
 
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar" id="minNavbar"> 
       <a href="index.html">Hjem</a>
       <a href="fasiliteter.html">Fasiliteter</a>
       <a href="medlem.html">Bli medlem</a>
       <a href="OmOss.html">Om oss</a>
-      <a class="active" href="kontaktOss.html">Kontakt oss</a>
+      <a class="active" href="kontaktOss.html">Kontakt oss</a> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!-- Allerede medlem seksjon -->
@@ -47,9 +52,9 @@
    
     <div class="contact-section">
       <div class="adress-section" style="grid-column: 1 / 2;">
-        <h4>Adresse: Gulbringvegen 36, 3800 Bø</h4>
-        <h4>Telefon: +47 12312312</h4>
-        <a href="mailto:usnstart@mail.no"><h4>Email: usnstart@mail.no</h4></a>
+        <p style="font-weight: bold;">Adresse: Gulbringvegen 36, 3800 Bø</p>
+        <p style="font-weight: bold;">Telefon: +47 12312312</p>
+        <a href="mailto:usnstart@mail.no"><p style="font-weight: bold;">Email: usnstart@mail.no</p></a>
         <div class="google-map">
           <div class="google-map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4060.883692567342!2d9.056738769081962!3d59.409024214122425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46474937ae91b7df%3A0xd599b79b8eb4e320!2zVW5pdmVyc2l0ZXRldCBpIFPDuHLDuHN0LU5vcmdlIOKAkyBjYW1wdXMgQsO4!5e0!3m2!1sno!2sno!4v1712568534334!5m2!1sno!2sno" 

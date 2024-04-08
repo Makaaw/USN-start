@@ -11,18 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Roboto Slab:wght@700&display=swap"
     />
     <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <script src="navbar.js"></script>
   </head>
   <body>
 
      <!-- Navbar -->
-     <div class="navbar">
+     <div class="navbar" id="minNavbar"> 
       <a href="index.html">Hjem</a>
       <a href="fasiliteter.html">Fasiliteter</a>
       <a class="active" href="medlem.html">Bli medlem</a>
       <a href="OmOss.html">Om oss</a>
-      <a href="kontaktOss.html">Kontakt oss</a>
+      <a href="kontaktOss.html">Kontakt oss</a> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
-
     <!-- Logo -->
     <img src="Logo.png" alt="Logo" id="logo" />
 

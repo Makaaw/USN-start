@@ -11,16 +11,21 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsiv.css" />
     <script src="https://kit.fontawesome.com/e11eebd0c1.js" crossorigin="anonymous"></script>  <!--Skalerbare ikon frå FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <script src="navbar.js"></script>
   </head>
   <body>
 
     <!-- Navbar --> 
-    <div class="navbar"> 
+    <div class="navbar" id="minNavbar"> 
       <a class="active" href="index.html">Hjem</a>
       <a href="fasiliteter.html">Fasiliteter</a>
       <a href="medlem.html">Bli medlem</a>
       <a href="OmOss.html">Om oss</a>
       <a href="kontaktOss.html">Kontakt oss</a> 
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
 
     <!-- Allerede medlem seksjon -->
@@ -145,7 +150,7 @@
               <div class="box2">
                 <p class="box-text">Allerede medlem?</p>
                 <p class="box-text">Book din arbeidsplass nå!</p>
-                <a href="login.html" class="bookingbutton">BOOK HER</a>
+                <a href="login.html" class="booking-button">BOOK HER</a>
               </div>
               <a href="medlem.html" class="cta-button">SE VÅRE ULIKE MEDLEMSKAPSPLANER</a>
             </div>

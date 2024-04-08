@@ -132,14 +132,15 @@ body {
 .navbar {
   background-color: #7E7365; /* Endrer bakgrunnen på navbaren til mørkebrun */
   overflow: hidden;
-  display: flex;
-  justify-content: flex-end; /* Justerer elementene til høyre */
 }
 
 .navbar a {
   color: #fff; /* Endrer farge på linkene til hvit */
+  float: left;
+  display: block;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 10px;
+  padding-left: 25px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600; /*semibold*/
@@ -158,6 +159,10 @@ nav ul li a.active {
   cursor: default;
 }
 
+/* Hide the link that should open and close the topnav on small screens */
+.navbar .icon {
+  display: none;
+}
 
 /* Main section */
 /* Første hovedseksjonen med lysere bakgrunnsfarge */
@@ -362,7 +367,7 @@ address {
   margin: 0;
 }
 
-.bookingbutton {
+.booking-button {
   display: block;
   background-color: white;
   color: black;
@@ -377,7 +382,6 @@ address {
 }
 
 .booking-button:hover {
-  color: black;
   transform: scale(1.05);
 }
 
@@ -506,6 +510,22 @@ address {
   margin: 0 auto;
   width: 70%;
   padding-bottom: 40px;
+}
+
+.box_book {
+  background-color:hsl(29, 92%, 50%);
+  color: white;
+  padding: 20px;
+  height: auto;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: -10px;
+  border-radius: 20px;
 }
 
 /*Underside medlemskap og priser*/
