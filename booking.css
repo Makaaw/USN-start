@@ -91,7 +91,16 @@ button {
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  text-decoration: none;
 }
+
+button a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
 .button {
   font-family: "Roboto", sans-serif;
   background-color: #7e7365;
@@ -167,6 +176,13 @@ button {
   fill-opacity: 1;
   cursor: pointer;
 }
+
+.chosen {
+  fill: #b9b9b9;
+  fill-opacity: 1;
+  cursor: pointer;
+}
+
 .actionButtons {
   display: flex;
   justify-content: center;
