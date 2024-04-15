@@ -40,13 +40,6 @@ h4 {
   font-weight: bold; /* velger Roboto Regular */
 }
 
-/* Logo */
-#logo {
-  padding: 0px 40px;
-  width: 180px; /* endre bredden etter behov */
-  height: auto; /* lar høyden justeres automatisk for å bevare proporsjonene */
-}
-
 
 /* Navbar */
 .navbar {
@@ -85,17 +78,32 @@ nav ul li a.active {
 }
 
 
-/* Allerede medlem seksjon */
+/* Wrapper for logo and login section */
+.logoLogin_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+/* Logo */
+#logo {
+  width: 180px;
+  height: auto;
+  margin-right: 10px;
+  padding: 0 40px;
+}
+
+/* Plassering av påloggingsdel */
 .member-section {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin: 10px;
+  justify-content: flex-end;
 }
 
 .member-section p {
+  margin: 0 10px 0 0;
   font-size: 0.8rem;
-  margin-right: 10px;
 }
 
 .member-button {
@@ -223,7 +231,7 @@ nav ul li a.active {
 
 .header-section .tittel {
   flex: 1;
-  margin: 4rem;
+  margin: 0 4rem;
   font-weight: 400; /* velger Roboto Regular */
   font-size: 64px;
 }
@@ -393,21 +401,7 @@ nav ul li a.active {
   color: #111111;
 }
 
-/*
-.footer.img {
-  height: 10rem;
-}
 
-.footer {
-  margin-top: 30px;
-  margin-left: 20px;
-}
-
-.footer p {
-  font-size: 0.9rem;
-  font-weight: 600;  
-}
-*/
 
 a {
   color: black;

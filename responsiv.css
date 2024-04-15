@@ -7,7 +7,7 @@
     font-size: 0.8rem;
   }
 
-  .navbar a { font-size: 0.8rem; /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ }
+  .navbar a { font-size: 0.8rem; }/* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ 
 
 
   .row2{
@@ -18,7 +18,8 @@
    .column-half .column-half2, .column-half3 {
      flex-basis: 100%;
      max-width: 100%;
-   }}
+   }
+  }
 
 
 @media screen and (max-width: 480px) {
@@ -28,9 +29,11 @@
   body {
     font-size: 0.8rem;
   }
-  .navbar a { font-size: 0.8rem; /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */ } 
-
-  .row2{
+  .navbar a { 
+    font-size: 0.8rem;
+    } /* Endre font-størrelsen på lenkene i navbar på mindre skjermer */
+  
+  .row2 {
     flex-wrap: wrap; /*Bryte på mindre skjermer*/
     flex-direction: column; 
    }
@@ -94,6 +97,15 @@
   .navbar a.icon {
     float: right;
     display: block;
+  }
+  #logo {
+    width: 120px;
+    height: auto;
+  }
+
+  #slagord {
+    margin: auto;
+    text-align: center;
   }
 }
 
